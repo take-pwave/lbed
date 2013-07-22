@@ -52,7 +52,8 @@ public:
 	 */
 	void write(float value) {
 		_value = value;
-		pulsewidth(_pulsewidth*_value);
+		_pulsewidth = _period*_value;
+		pulsewidth(_pulsewidth);
 	}
 
 	/*

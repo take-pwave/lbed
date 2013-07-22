@@ -3,7 +3,7 @@
  * (C) Code Red Technologies Ltd, 2008-2013
  * Generated linker script file for LPC1114FN/102
  * Created from LibIncTemplate.ld (vLPCXpresso v4.2 (4 [Build 267] [2012-07-11] ))
- * By LPCXpresso v4.2.4 [Build 267] [2012-07-11]  on Sat Jul 20 10:43:55 JST 2013
+ * By LPCXpresso v4.2.4 [Build 267] [2012-07-11]  on Sun Jul 21 16:58:53 JST 2013
  */
 
 

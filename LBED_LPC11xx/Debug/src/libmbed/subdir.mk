@@ -45,14 +45,14 @@ CPP_DEPS += \
 src/libmbed/%.o: ../src/libmbed/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C++ Compiler'
-	arm-none-eabi-c++ -D__USE_CMSIS=CMSISv2p00_LPC11xx -D__NEWLIB__ -I"/Users/take/proj/LBED/LBED_Proj/CMSISv2p00_LPC11xx/inc" -I"/Users/take/proj/LBED/LBED_Proj/LBED_LPC11xx/inc" -I"/Users/take/proj/LBED/LBED_Proj/LBED_LPC11xx/src/Common/inc" -O0 -g -Wall -c -fmessage-length=0 -mcpu=cortex-m0 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	arm-none-eabi-c++ -D__USE_CMSIS=CMSISv2p00_LPC11xx -D__NEWLIB__ -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc" -I"/Users/take/proj/LBED/lbed/LBED_LPC11xx/inc" -I"/Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc" -O0 -g -Wall -c -fmessage-length=0 -mcpu=cortex-m0 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/libmbed/%.o: ../src/libmbed/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC11xx -D__NEWLIB__ -DDEBUG -I../inc -I"/Users/take/proj/LBED/LBED_Proj/LBED_LPC11xx/src/Common/inc" -I"/Users/take/proj/LBED/LBED_Proj/CMSISv2p00_LPC11xx/inc" -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC11xx -D__NEWLIB__ -DDEBUG -I../inc -I"/Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc" -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc" -Os -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -4,17 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/TestLM73.cpp \
+../src/TestPwmOut.cpp \
 ../src/cr_cpp_config.cpp \
 ../src/cr_startup_lpc11.cpp 
 
 OBJS += \
-./src/TestLM73.o \
+./src/TestPwmOut.o \
 ./src/cr_cpp_config.o \
 ./src/cr_startup_lpc11.o 
 
 CPP_DEPS += \
-./src/TestLM73.d \
+./src/TestPwmOut.d \
 ./src/cr_cpp_config.d \
 ./src/cr_startup_lpc11.d 
 
