@@ -25,7 +25,7 @@
 * copyright, permission, and disclaimer notice must appear in all copies of 
 * this code.
 ****************************************************************************/
-#include "LPC11xx.h"			/* LPC11xx Peripheral Registers */
+#include "lpcdevice.h"
 #include "type.h"
 #include "_i2c.h"
 

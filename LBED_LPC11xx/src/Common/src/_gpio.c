@@ -26,7 +26,7 @@
 * copyright, permission, and disclaimer notice must appear in all copies of 
 * this code.
 ****************************************************************************/
-#include "LPC11xx.h"			/* LPC11xx Peripheral Registers */
+#include "lpcdevice.h"
 #include "_gpio.h"
 
 volatile uint32_t gpio0_counter = 0;

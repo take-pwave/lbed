@@ -26,7 +26,7 @@
 * copyright, permission, and disclaimer notice must appear in all copies of 
 * this code.
 ****************************************************************************/
-#include "LPC11xx.h"
+#include "lpcdevice.h"
 #include "_timer16.h"
 
 volatile uint32_t timer16_0_counter = 0;

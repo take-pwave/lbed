@@ -1,4 +1,5 @@
-src/TestPwmOut.d: ../src/TestPwmOut.cpp \
+src/Tone.d: ../src/Tone.cpp \
+ /Users/take/proj/LBED/lbed/LBED_USERLIB/inc/Tone.h \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/lbed.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/core_cm0.h \
@@ -23,6 +24,8 @@ src/TestPwmOut.d: ../src/TestPwmOut.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_timer16.h \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_timer32.h
+
+/Users/take/proj/LBED/lbed/LBED_USERLIB/inc/Tone.h:
 
 /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/lbed.h:
 

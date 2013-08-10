@@ -6,6 +6,8 @@ __CRP extern const unsigned int CRP_WORD = CRP_NO_CRP ;
 
 int main(void) {
     wait_init();
+	Serial	pc(p9, p10);
+	pc.baud(9600);
     PwmOut led(p26);
     led = 0.0;
     while(1) {

@@ -44,7 +44,7 @@ all: LBED_MAIN.axf
 LBED_MAIN.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU C++ Linker'
-	arm-none-eabi-c++ -nostdlib -L"/Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/Debug" -L"/Users/take/proj/LBED/lbed/LBED_USERLIB/Debug" -L"/Users/take/proj/LBED/lbed/LBED_LPC11xx/Debug" -Xlinker -Map="LBED_MAIN.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "cpp_test_tmp_Debug.ld" -o"LBED_MAIN.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-c++ -nostdlib -L"/Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/Debug" -L"/Users/take/proj/LBED/lbed/LBED_USERLIB/Debug" -L"/Users/take/proj/LBED/lbed/LBED_LPC11xx/Debug" -Xlinker -Map="LBED_MAIN.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "LBED_MAIN_Debug.ld" -o"LBED_MAIN.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

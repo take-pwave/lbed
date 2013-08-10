@@ -73,12 +73,15 @@ public:
 	{
 		return read();
 	}
+
+	void disable(void);
 protected:
     const char *    _name;
 	PinName 		_pin;
 	float			_period;
 	float			_pulsewidth;
 	float			_value;
+	uint32_t		_scale;	// prescle factor init_timer16PWMのperiodがSysclock/1000を超えたときに1000にする。デフォルト1
 
 private:
 	void setup(float seconds);

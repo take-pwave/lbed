@@ -6,17 +6,20 @@
 CPP_SRCS += \
 ../src/LM73.cpp \
 ../src/MARMEX_OB_oled.cpp \
-../src/TextLCD.cpp 
+../src/TextLCD.cpp \
+../src/Tone.cpp 
 
 OBJS += \
 ./src/LM73.o \
 ./src/MARMEX_OB_oled.o \
-./src/TextLCD.o 
+./src/TextLCD.o \
+./src/Tone.o 
 
 CPP_DEPS += \
 ./src/LM73.d \
 ./src/MARMEX_OB_oled.d \
-./src/TextLCD.d 
+./src/TextLCD.d \
+./src/Tone.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

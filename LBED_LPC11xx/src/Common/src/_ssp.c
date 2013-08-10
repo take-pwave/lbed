@@ -19,7 +19,7 @@
  * warranty that such application will be suitable for the specified
  * use without further testing or modification.
 ****************************************************************************/
-#include "LPC11xx.h"			/* LPC11xx Peripheral Registers */
+#include "lpcdevice.h"
 #include "_gpio.h"
 #include "_ssp.h"
 
