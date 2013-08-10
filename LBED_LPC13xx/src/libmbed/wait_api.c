@@ -23,7 +23,7 @@ void wait_ms(int ms) {
 }
 
 void wait_us(int us) {
-	volatile long i = 8*us;	// 72MHｚの4クロックでループを回ると仮定
+	volatile long i = 8*us;	// オシロスコープで調整した値
 	while (i-- > 0)
 		continue;
 }
