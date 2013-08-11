@@ -4,17 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/TestLED.cpp \
+../src/TestSwitch.cpp \
 ../src/cr_cpp_config.cpp \
 ../src/cr_startup_lpc13.cpp 
 
 OBJS += \
-./src/TestLED.o \
+./src/TestSwitch.o \
 ./src/cr_cpp_config.o \
 ./src/cr_startup_lpc13.o 
 
 CPP_DEPS += \
-./src/TestLED.d \
+./src/TestSwitch.d \
 ./src/cr_cpp_config.d \
 ./src/cr_startup_lpc13.d 
 

@@ -1,4 +1,4 @@
-src/TestLED.d: ../src/TestLED.cpp \
+src/TestSwitch.d: ../src/TestSwitch.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/inc/LPC13xx.h \
@@ -7,8 +7,9 @@ src/TestLED.d: ../src/TestLED.cpp \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/inc/core_cmFunc.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/inc/system_LPC13xx.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/PinNames.h \
- /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/DigitalOut.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/DigitalIn.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/platform.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/DigitalOut.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/BusOut.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/DigitalOut.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/wait_api.h \
@@ -41,9 +42,11 @@ src/TestLED.d: ../src/TestLED.cpp \
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/PinNames.h:
 
-/Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/DigitalOut.h:
+/Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/DigitalIn.h:
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/platform.h:
+
+/Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/DigitalOut.h:
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/BusOut.h:
 

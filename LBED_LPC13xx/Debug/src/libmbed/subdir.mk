@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/libmbed/BusOut.cpp \
+../src/libmbed/DigitalIn.cpp \
 ../src/libmbed/DigitalOut.cpp \
 ../src/libmbed/I2C.cpp \
 ../src/libmbed/Print.cpp \
@@ -18,6 +19,7 @@ C_SRCS += \
 
 OBJS += \
 ./src/libmbed/BusOut.o \
+./src/libmbed/DigitalIn.o \
 ./src/libmbed/DigitalOut.o \
 ./src/libmbed/I2C.o \
 ./src/libmbed/Print.o \
@@ -32,6 +34,7 @@ C_DEPS += \
 
 CPP_DEPS += \
 ./src/libmbed/BusOut.d \
+./src/libmbed/DigitalIn.d \
 ./src/libmbed/DigitalOut.d \
 ./src/libmbed/I2C.d \
 ./src/libmbed/Print.d \

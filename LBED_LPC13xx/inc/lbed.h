@@ -5,6 +5,7 @@
 //using namespace mbed;
 
 #include "PinNames.h"
+#include "DigitalIn.h"
 #include "DigitalOut.h"
 #include "BusOut.h"
 #include "wait_api.h"
