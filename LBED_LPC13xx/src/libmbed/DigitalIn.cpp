@@ -54,6 +54,9 @@ void DigitalIn::setup(PinName pin, const char* name)
 		case 7: _io = &LPC_IOCON->PIO1_7; *_io = 0xd0; break;
 		case 8: _io = &LPC_IOCON->PIO1_8; *_io = 0xd0; break;
 		case 9: _io = &LPC_IOCON->PIO1_9; *_io = 0xd0; break;
+		// ARM基板のために追加
+		case 10: _io = &LPC_IOCON->PIO1_10; *_io = 0xd0; break;
+		case 11: _io = &LPC_IOCON->PIO1_11; *_io = 0xd0; break;
 		}
 	} else if (_pin >= P2_0 && _pin <= P2_31) {
 		_gpio = LPC_GPIO2;

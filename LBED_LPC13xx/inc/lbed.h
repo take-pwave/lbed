@@ -5,6 +5,7 @@
 //using namespace mbed;
 
 #include "PinNames.h"
+#include "AnalogIn.h"
 #include "DigitalIn.h"
 #include "DigitalOut.h"
 #include "BusOut.h"
@@ -15,3 +16,4 @@
 #include "I2C.h"
 #include "SPI.h"
 #include "PwmOut.h"
+#include "SerialCDC.h"

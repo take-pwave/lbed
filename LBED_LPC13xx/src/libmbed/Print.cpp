@@ -56,7 +56,7 @@ int Print::println(char c) {
     printf("%c", 'a');				"a"
 */
 
-#if 0
+#if 1
 void Print::printf (
 	const char*	str,	/* Pointer to the format string */
 	...					/* Optional arguments */

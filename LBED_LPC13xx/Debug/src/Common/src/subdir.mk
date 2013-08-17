@@ -4,25 +4,43 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/Common/src/_cdc_usbdesc.c \
+../src/Common/src/_cdcuser.c \
 ../src/Common/src/_gpio.c \
 ../src/Common/src/_i2c.c \
+../src/Common/src/_serial.c \
 ../src/Common/src/_ssp.c \
 ../src/Common/src/_timer16.c \
-../src/Common/src/_timer32.c 
+../src/Common/src/_timer32.c \
+../src/Common/src/_usbcore.c \
+../src/Common/src/_usbhw.c \
+../src/Common/src/_usbuser.c 
 
 OBJS += \
+./src/Common/src/_cdc_usbdesc.o \
+./src/Common/src/_cdcuser.o \
 ./src/Common/src/_gpio.o \
 ./src/Common/src/_i2c.o \
+./src/Common/src/_serial.o \
 ./src/Common/src/_ssp.o \
 ./src/Common/src/_timer16.o \
-./src/Common/src/_timer32.o 
+./src/Common/src/_timer32.o \
+./src/Common/src/_usbcore.o \
+./src/Common/src/_usbhw.o \
+./src/Common/src/_usbuser.o 
 
 C_DEPS += \
+./src/Common/src/_cdc_usbdesc.d \
+./src/Common/src/_cdcuser.d \
 ./src/Common/src/_gpio.d \
 ./src/Common/src/_i2c.d \
+./src/Common/src/_serial.d \
 ./src/Common/src/_ssp.d \
 ./src/Common/src/_timer16.d \
-./src/Common/src/_timer32.d 
+./src/Common/src/_timer32.d \
+./src/Common/src/_usbcore.d \
+./src/Common/src/_usbhw.d \
+./src/Common/src/_usbuser.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
