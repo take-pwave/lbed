@@ -3,6 +3,9 @@
 	<name>LBED_MAIN</name>
 	<comment></comment>
 	<projects>
+		<project>CMSISv2p00_LPC11xx</project>
+		<project>LBED_LPC11xx</project>
+		<project>LBED_USERLIB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

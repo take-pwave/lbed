@@ -3,7 +3,7 @@
  * (C) Code Red Technologies Ltd, 2008-2013
  * Generated linker script file for LPC1343
  * Created from generic_cpp.ld (vLPCXpresso v4.2 (4 [Build 267] [2012-07-11] ))
- * By LPCXpresso v4.2.4 [Build 267] [2012-07-11]  on Sat Aug 17 19:18:14 JST 2013
+ * By LPCXpresso v4.2.4 [Build 267] [2012-07-11]  on Sun Aug 18 09:36:26 JST 2013
  */
 
 

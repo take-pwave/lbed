@@ -1,5 +1,4 @@
-src/Tone.d: ../src/Tone.cpp \
- /Users/take/proj/LBED/lbed/LBED_USERLIB/inc/Tone.h \
+src/LM75B.d: ../src/LM75B.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
@@ -24,9 +23,8 @@ src/Tone.d: ../src/Tone.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_gpio.h \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_timer16.h \
- /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_timer32.h
-
-/Users/take/proj/LBED/lbed/LBED_USERLIB/inc/Tone.h:
+ /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_timer32.h \
+ /Users/take/proj/LBED/lbed/LBED_USERLIB/inc/LM75B.h
 
 /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/lbed.h:
 
@@ -77,3 +75,5 @@ src/Tone.d: ../src/Tone.cpp \
 /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_timer16.h:
 
 /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/_timer32.h:
+
+/Users/take/proj/LBED/lbed/LBED_USERLIB/inc/LM75B.h:

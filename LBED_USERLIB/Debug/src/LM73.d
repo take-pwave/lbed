@@ -1,5 +1,6 @@
 src/LM73.d: ../src/LM73.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/lbed.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/core_cm0.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/core_cmInstr.h \
@@ -26,6 +27,8 @@ src/LM73.d: ../src/LM73.cpp \
  /Users/take/proj/LBED/lbed/LBED_USERLIB/inc/LM73.h
 
 /Users/take/proj/LBED/lbed/LBED_LPC11xx/inc/lbed.h:
+
+/Users/take/proj/LBED/lbed/LBED_LPC11xx/src/Common/inc/lpcdevice.h:
 
 /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h:
 
