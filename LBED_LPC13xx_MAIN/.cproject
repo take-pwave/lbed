@@ -33,9 +33,9 @@
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.299645692" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.include.paths.250219280" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LPC13xx_USERLIB/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC13xx/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_USERLIB/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LPC13xx/src/Common/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LPC13xx/inc}&quot;"/>
 								</option>

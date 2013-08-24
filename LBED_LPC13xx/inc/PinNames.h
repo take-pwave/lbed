@@ -80,7 +80,7 @@ enum e_PinName {
       , USBRX = P1_6
       , MOSI = P0_9
       , MISO = P0_8
-      , SCKL = P0_6
+      , SCKL = P2_11
       , SDA = P0_5
       , SCL = P0_4
 

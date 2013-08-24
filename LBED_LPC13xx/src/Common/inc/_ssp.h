@@ -114,7 +114,7 @@ extern void SSP0_IRQHandler (void);
 extern void SSP1_IRQHandler (void);
 extern void SSP_IOConfig( uint8_t portNum );
 extern void SSP_Init( uint8_t portNum );
-extern int SSP_Send( uint8_t portNum, uint8_t *Buf, uint32_t Length );
+extern int SSP_Send( uint8_t portNum, uint8_t *buf, uint32_t Length );
 extern void SSP_Receive( uint8_t portNum, uint8_t *buf, uint32_t Length );
 
 #ifdef __cplusplus

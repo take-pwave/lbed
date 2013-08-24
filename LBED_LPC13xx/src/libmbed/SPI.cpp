@@ -77,6 +77,6 @@ int SPI::write(int value) {
 		src_addr[i] = value & 0xFF;
 		value = value >> 8;
 	}
-    return SSP_Send(SSP_NUM, src_addr, len);
+	return SSP_Send(SSP_NUM, src_addr, len);
 }
 
