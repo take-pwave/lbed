@@ -1,4 +1,4 @@
-src/TestRTC.d: ../src/TestRTC.cpp \
+src/TestDeepSleepWithAlarm.d: ../src/TestDeepSleepWithAlarm.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/inc/LPC13xx.h \

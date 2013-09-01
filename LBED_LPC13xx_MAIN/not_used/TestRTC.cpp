@@ -16,14 +16,14 @@ int main(void) {
 	pc.println("Real Time Clock Test.");
 
 	PCF2123	rtc(MOSI, MISO, SCKL, P0_2);
-	rtc.set_alarm(0x45, 0x59, 0x23, 0x31, 0x06, 0x12, 0x10);
+	rtc.set_time(0x45, 0x59, 0x23, 0x31, 0x06, 0x12, 0x10);
 
 	int	pS = 0xff;
 	while (1) {
 		rtc.read_rtc();
 		if (pS != rtc.S) {
-			pc.printf("%d%d/%d%d/%d%d[%d] ", (rtc.Y>>4)&0xf, rtc.Y&0xf, (rtc.N>>4)&0xf, rtc.N&0xf,(rtc.D>>4)&0xf, rtc.D&0xf, rtc.W&0x7);
-			pc.printf("%d%d:%d%d:%d%d\r\n",(rtc.H>>4)&0xf, rtc.H&0xf, (rtc.M>>4)&0xf, rtc.M&0xf,(rtc.S>>4)&0xf, rtc.S&0xf);
+            pc.printf("20%02x/%02x/%02x[%d] ",	rtc.Y, rtc.N, rtc.D, rtc.W&0x7);
+            pc.printf("%02x/%02x/%02x\n",		rtc.H, rtc.M&0x3F, rtc.S&0x3F);
 			myled = !myled;
 			pS = rtc.S;
 		}

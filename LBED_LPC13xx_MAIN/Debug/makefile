@@ -56,7 +56,7 @@ clean:
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "LBED_LPC13xx_MAIN.axf"; # arm-none-eabi-objcopy -O binary "LBED_LPC13xx_MAIN.axf" "LBED_LPC13xx_MAIN.bin" ; checksum -p LPC1343 -d "LBED_LPC13xx_MAIN.bin";
+	-arm-none-eabi-size "LBED_LPC13xx_MAIN.axf"; arm-none-eabi-objcopy -O binary "LBED_LPC13xx_MAIN.axf" "LBED_LPC13xx_MAIN.bin" ; checksum -p LPC1343 -d "LBED_LPC13xx_MAIN.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents
