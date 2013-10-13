@@ -27,7 +27,7 @@ src/PCF2123.d: ../src/PCF2123.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/_timer16.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/_timer32.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/SerialCDC.h \
- /Users/take/Documents/LPCXpresso_4.2.4/workspace/LBED_LPC13xx_USERLIB/inc/PCF2123.h
+ /Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/PCF2123.h
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/lbed.h:
 
@@ -85,4 +85,4 @@ src/PCF2123.d: ../src/PCF2123.cpp \
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/SerialCDC.h:
 
-/Users/take/Documents/LPCXpresso_4.2.4/workspace/LBED_LPC13xx_USERLIB/inc/PCF2123.h:
+/Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/PCF2123.h:

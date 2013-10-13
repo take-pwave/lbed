@@ -8,9 +8,9 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include subdir.mk
 -include src/libmbed/subdir.mk
 -include src/Common/src/subdir.mk
+-include subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -45,7 +45,7 @@ all: libLBED_LPC13xx.a
 libLBED_LPC13xx.a: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Archiver'
-	arm-none-eabi-ar -r "libLBED_LPC13xx.a" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-ar -r  "libLBED_LPC13xx.a" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

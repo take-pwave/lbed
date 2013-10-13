@@ -8,8 +8,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include subdir.mk
 -include src/subdir.mk
+-include subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -44,7 +44,7 @@ all: LBED_LPC13xx_MAIN.axf
 LBED_LPC13xx_MAIN.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU C++ Linker'
-	arm-none-eabi-c++ -nostdlib -L"/Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/Debug" -L"/Users/take/Documents/LPCXpresso_4.2.4/workspace/LBED_LPC13xx_USERLIB/Debug" -L"/Users/take/proj/LBED/lbed/LBED_LPC13xx/Debug" -Xlinker -Map="LBED_LPC13xx_MAIN.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "LBED_LPC13xx_MAIN_Debug.ld" -o"LBED_LPC13xx_MAIN.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-c++ -nostdlib -L"/Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/Debug" -L"/Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/Debug" -L"/Users/take/proj/LBED/lbed/LBED_LPC13xx/Debug" -Xlinker -Map="LBED_LPC13xx_MAIN.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "LBED_LPC13xx_MAIN_Debug.ld" -o "LBED_LPC13xx_MAIN.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

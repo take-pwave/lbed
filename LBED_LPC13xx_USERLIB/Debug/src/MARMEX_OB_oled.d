@@ -1,5 +1,5 @@
 src/MARMEX_OB_oled.d: ../src/MARMEX_OB_oled.cpp \
- /Users/take/Documents/LPCXpresso_4.2.4/workspace/LBED_LPC13xx_USERLIB/inc/MARMEX_OB_oled.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/MARMEX_OB_oled.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/inc/LPC13xx.h \
@@ -29,7 +29,7 @@ src/MARMEX_OB_oled.d: ../src/MARMEX_OB_oled.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/_timer32.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/SerialCDC.h
 
-/Users/take/Documents/LPCXpresso_4.2.4/workspace/LBED_LPC13xx_USERLIB/inc/MARMEX_OB_oled.h:
+/Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/MARMEX_OB_oled.h:
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/lbed.h:
 
