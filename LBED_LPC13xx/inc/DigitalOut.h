@@ -1,5 +1,5 @@
-#ifndef MBED_DIGITALOUT_H
-#define MBED_DIGITALOUT_H
+#ifndef LBED_DIGITALOUT_H
+#define LBED_DIGITALOUT_H
 
 #include "platform.h"
 #include "PinNames.h"

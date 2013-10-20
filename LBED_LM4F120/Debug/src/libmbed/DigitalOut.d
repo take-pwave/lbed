@@ -9,7 +9,8 @@ src/libmbed/DigitalOut.d: ../src/libmbed/DigitalOut.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalOut.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/platform.h \
- /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalIn.h
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/platform.h:
 
@@ -32,3 +33,5 @@ src/libmbed/DigitalOut.d: ../src/libmbed/DigitalOut.cpp \
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/platform.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalIn.h:
