@@ -1,4 +1,4 @@
-src/TestSerial.d: ../src/TestSerial.cpp \
+src/TestLED.d: ../src/TestLED.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalOut.h \
