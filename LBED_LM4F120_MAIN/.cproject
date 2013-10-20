@@ -82,9 +82,9 @@
 								<option id="com.crt.advproject.link.cpp.manage.2070395384" name="Manage linker script" superClass="com.crt.advproject.link.cpp.manage" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.cpp.hdrlib.1593491072" name="Use C library" superClass="com.crt.advproject.link.cpp.hdrlib" value="com.crt.advproject.cpp.link.hdrlib.newlib.none" valueType="enumerated"/>
 								<option id="gnu.cpp.link.option.libs.225123596" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
-									<listOptionValue builtIn="false" value="StelarisWare"/>
 									<listOptionValue builtIn="false" value="LBED_LM4F120_USERLIB"/>
 									<listOptionValue builtIn="false" value="LBED_LM4F120"/>
+									<listOptionValue builtIn="false" value="StelarisWare"/>
 									<listOptionValue builtIn="false" value="CMSISv2p00_LM4F120"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.1756115890" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">

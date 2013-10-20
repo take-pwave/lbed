@@ -4,7 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/TestLCD.cpp \
+../src/TestSerial.cpp \
 ../src/cr_cpp_config.cpp \
 ../src/dummy.cpp 
 
@@ -13,7 +13,7 @@ C_SRCS += \
 
 OBJS += \
 ./src/LM4F_startup.o \
-./src/TestLCD.o \
+./src/TestSerial.o \
 ./src/cr_cpp_config.o \
 ./src/dummy.o 
 
@@ -21,7 +21,7 @@ C_DEPS += \
 ./src/LM4F_startup.d 
 
 CPP_DEPS += \
-./src/TestLCD.d \
+./src/TestSerial.d \
 ./src/cr_cpp_config.d \
 ./src/dummy.d 
 

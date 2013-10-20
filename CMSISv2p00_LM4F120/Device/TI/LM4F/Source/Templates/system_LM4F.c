@@ -151,7 +151,8 @@
 // to the table in the comments above.  If an external crystal is used, then
 // this value must be set to match the value of the crystal.
 //
-#define CFG_RCC_XTAL 14
+//#define CFG_RCC_XTAL 14
+#define CFG_RCC_XTAL 21
 
 //      <o> OSCSRC: Oscillator Source
 //              <0=> 0: MOSC Main oscillator
