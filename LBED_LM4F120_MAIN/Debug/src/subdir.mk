@@ -4,26 +4,20 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/TestSW.cpp \
-../src/cr_cpp_config.cpp \
-../src/dummy.cpp 
+../src/TestSW.cpp 
 
 C_SRCS += \
 ../src/LM4F_startup.c 
 
 OBJS += \
 ./src/LM4F_startup.o \
-./src/TestSW.o \
-./src/cr_cpp_config.o \
-./src/dummy.o 
+./src/TestSW.o 
 
 C_DEPS += \
 ./src/LM4F_startup.d 
 
 CPP_DEPS += \
-./src/TestSW.d \
-./src/cr_cpp_config.d \
-./src/dummy.d 
+./src/TestSW.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

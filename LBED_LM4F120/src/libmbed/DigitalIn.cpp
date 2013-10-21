@@ -63,13 +63,17 @@ void DigitalIn::mode(PinMode mode) {
 		_gpio->PDR |= _mask;
 		break;
 	case PullNone:
-		_gpio->PUR &= ~_mask;	// Not Pull Up
+		_gpio->PDR &= ~_mask;	// Not Pull Up
+		_gpio->PUR &= ~_mask;	// Not Pull Down
+		_gpio->ODR &= ~_mask;	// Not Open Drain
 		break;
 	case OpenDrain:
 		_gpio->ODR |= _mask;
 		break;
 	default:
-		_gpio->PUR &= ~_mask;	// Not Pull Up
+		_gpio->PDR &= ~_mask;	// Not Pull Up
+		_gpio->PUR &= ~_mask;	// Not Pull Down
+		_gpio->ODR &= ~_mask;	// Not Open Drain
 	}
 }
 

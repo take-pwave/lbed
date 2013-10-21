@@ -9,6 +9,8 @@ CPP_SRCS += \
 ../src/libmbed/DigitalOut.cpp \
 ../src/libmbed/Print.cpp \
 ../src/libmbed/Serial.cpp \
+../src/libmbed/cr_cpp_config.cpp \
+../src/libmbed/dummy.cpp \
 ../src/libmbed/pure_virtual.cpp 
 
 C_SRCS += \
@@ -20,6 +22,8 @@ OBJS += \
 ./src/libmbed/DigitalOut.o \
 ./src/libmbed/Print.o \
 ./src/libmbed/Serial.o \
+./src/libmbed/cr_cpp_config.o \
+./src/libmbed/dummy.o \
 ./src/libmbed/pure_virtual.o \
 ./src/libmbed/wait_api.o 
 
@@ -32,6 +36,8 @@ CPP_DEPS += \
 ./src/libmbed/DigitalOut.d \
 ./src/libmbed/Print.d \
 ./src/libmbed/Serial.d \
+./src/libmbed/cr_cpp_config.d \
+./src/libmbed/dummy.d \
 ./src/libmbed/pure_virtual.d 
 
 
