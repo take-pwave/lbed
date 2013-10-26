@@ -52,7 +52,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LM4F120/inc}&quot;"/>
 								</option>
 								<option id="com.crt.advproject.cpp.lib.debug.option.optimization.level.1364479816" name="Optimization Level" superClass="com.crt.advproject.cpp.lib.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.size" valueType="enumerated"/>
-								<option id="com.crt.advproject.cpp.fpu.561453219" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.fpu.561453219" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.fpv4" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.736365167" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.lib.debug.1297413426" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug">
@@ -67,7 +67,7 @@
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.2010323418" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
 								<option id="com.crt.advproject.gcc.lib.debug.option.optimization.level.1268527556" name="Optimization Level" superClass="com.crt.advproject.gcc.lib.debug.option.optimization.level" value="gnu.c.optimization.level.size" valueType="enumerated"/>
-								<option id="com.crt.advproject.gcc.fpu.967594002" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.fpu.967594002" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1196487705" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LM4F120/Include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
@@ -81,7 +81,7 @@
 								<option id="com.crt.advproject.gas.thumb.1351528852" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="gnu.both.asm.option.flags.crt.745548832" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__ -DDEBUG -D__CODE_RED" valueType="string"/>
 								<option id="com.crt.advproject.gas.hdrlib.1423914789" name="Use headers for C library" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
-								<option id="com.crt.advproject.gas.fpu.685346528" name="Floating point" superClass="com.crt.advproject.gas.fpu" value="com.crt.advproject.gas.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.fpu.685346528" name="Floating point" superClass="com.crt.advproject.gas.fpu" value="com.crt.advproject.gas.fpu.fpv4" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.assembler.input.1221602489" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.770794584" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>

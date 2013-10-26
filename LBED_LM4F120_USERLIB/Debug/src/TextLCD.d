@@ -10,10 +10,14 @@ src/TextLCD.d: ../src/TextLCD.cpp \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include/core_cmFunc.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include/core_cm4_simd.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include/system_LM4F.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalIn.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/BusOut.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalOut.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/wait_api.h \
- /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/print.h
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/print.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Serial.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Stream.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Print.h
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/TextLCD.h:
 
@@ -37,6 +41,8 @@ src/TextLCD.d: ../src/TextLCD.cpp \
 
 /Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include/system_LM4F.h:
 
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalIn.h:
+
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/BusOut.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalOut.h:
@@ -44,3 +50,9 @@ src/TextLCD.d: ../src/TextLCD.cpp \
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/wait_api.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/print.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Serial.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Stream.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Print.h:

@@ -51,7 +51,7 @@
 								<option id="com.crt.advproject.cpp.arch.209777945" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm4" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.thumb.497127147" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.other.other.1036466654" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti" valueType="string"/>
-								<option id="com.crt.advproject.cpp.fpu.1961354106" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.fpu.1961354106" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.fpv4" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.545292971" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gcc.lib.debug.1004026908" name="MCU C Compiler" superClass="com.crt.advproject.gcc.lib.debug">
@@ -74,7 +74,7 @@
 								<option id="com.crt.advproject.gcc.hdrlib.932990816" name="Use headers for C library" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.lib.debug.option.debugging.level.37690545" name="Debug Level" superClass="com.crt.advproject.gcc.lib.debug.option.debugging.level" value="gnu.c.debugging.level.default" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.lib.debug.option.optimization.level.2003802474" name="Optimization Level" superClass="com.crt.advproject.gcc.lib.debug.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
-								<option id="com.crt.advproject.gcc.fpu.1762553362" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.fpu.1762553362" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.input.189471461" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.lib.debug.1199056603" name="MCU Assembler" superClass="com.crt.advproject.gas.lib.debug">
@@ -82,7 +82,7 @@
 								<option id="com.crt.advproject.gas.thumb.430089063" name="Thumb mode" superClass="com.crt.advproject.gas.thumb" value="true" valueType="boolean"/>
 								<option id="gnu.both.asm.option.flags.crt.1310306982" name="Assembler flags" superClass="gnu.both.asm.option.flags.crt" value="-c -x assembler-with-cpp -D__NEWLIB__  -DDEBUG -D__CODE_RED" valueType="string"/>
 								<option id="com.crt.advproject.gas.hdrlib.1168847938" name="Use headers for C library" superClass="com.crt.advproject.gas.hdrlib" value="com.crt.advproject.gas.hdrlib.newlib" valueType="enumerated"/>
-								<option id="com.crt.advproject.gas.fpu.1573709343" name="Floating point" superClass="com.crt.advproject.gas.fpu" value="com.crt.advproject.gas.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.gas.fpu.1573709343" name="Floating point" superClass="com.crt.advproject.gas.fpu" value="com.crt.advproject.gas.fpu.fpv4" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.assembler.input.1424028465" name="Additional Assembly Source Files" superClass="com.crt.advproject.assembler.input"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1809011115" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
