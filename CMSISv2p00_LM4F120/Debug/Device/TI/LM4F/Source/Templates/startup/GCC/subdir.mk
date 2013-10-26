@@ -14,7 +14,7 @@ OBJS += \
 Device/TI/LM4F/Source/Templates/startup/GCC/%.o: ../Device/TI/LM4F/Source/Templates/startup/GCC/%.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU Assembler'
-	arm-none-eabi-gcc -c -x assembler-with-cpp -D__NEWLIB__  -DDEBUG -D__CODE_RED -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include" -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include" -mcpu=cortex-m4 -mfpu=vfp -mfloat-abi=softfp -mthumb -o "$@" "$<"
+	arm-none-eabi-gcc -c -x assembler-with-cpp -D__NEWLIB__  -DDEBUG -D__CODE_RED -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include" -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include" -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
