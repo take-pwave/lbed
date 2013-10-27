@@ -7,5 +7,6 @@
 #include "wait_api.h"
 #include "print.h"
 #include "Serial.h"
+#include "I2C.h"
 
 #endif

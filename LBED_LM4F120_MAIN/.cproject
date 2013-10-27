@@ -33,8 +33,8 @@
 								</option>
 								<option id="com.crt.advproject.cpp.arch.2129144899" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm4" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.thumb.664090406" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.cpp.fpu.1637219738" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.other.other.1761097841" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections " valueType="string"/>
+								<option id="com.crt.advproject.cpp.fpu.1637219738" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.fpv4" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.other.other.1761097841" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-exceptions" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1473680974" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/StelarisWare/StellarisWare}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LM4F120_USERLIB/inc}&quot;"/>
@@ -49,14 +49,14 @@
 									<listOptionValue builtIn="false" value="CPP_USE_HEAP"/>
 									<listOptionValue builtIn="false" value="__USE_CMSIS"/>
 									<listOptionValue builtIn="false" value="CORE_M4"/>
-									<listOptionValue builtIn="false" value="__REDLIB__"/>
+									<listOptionValue builtIn="false" value="__NEWLIB__"/>
 									<listOptionValue builtIn="false" value="DEBUG"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
 								</option>
 								<option id="com.crt.advproject.gcc.arch.1058293741" name="Architecture" superClass="com.crt.advproject.gcc.arch" value="com.crt.advproject.gcc.target.cm4" valueType="enumerated"/>
 								<option id="com.crt.advproject.gcc.thumb.686533177" name="Thumb mode" superClass="com.crt.advproject.gcc.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.gcc.fpu.1290726006" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4.hard" valueType="enumerated"/>
-								<option id="gnu.c.compiler.option.misc.other.1644283942" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections " valueType="string"/>
+								<option id="com.crt.advproject.gcc.fpu.1290726006" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.1644283942" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-exceptions" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.840442246" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/StelarisWare/StellarisWare}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LM4F120_USERLIB/inc}&quot;"/>
@@ -64,6 +64,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LM4F120/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LM4F120/Device/TI/LM4F/Include}&quot;"/>
 								</option>
+								<option id="com.crt.advproject.gcc.hdrlib.92133200" name="Use headers for C library" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.newlib" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.input.599835995" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.debug.102221721" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
@@ -78,7 +79,7 @@
 								<option id="com.crt.advproject.link.cpp.multicore.slave.1340146770" name="Multicore slave" superClass="com.crt.advproject.link.cpp.multicore.slave"/>
 								<option id="com.crt.advproject.link.cpp.arch.1477394640" name="Architecture" superClass="com.crt.advproject.link.cpp.arch" value="com.crt.advproject.link.cpp.target.cm4" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.cpp.thumb.978890616" name="Thumb mode" superClass="com.crt.advproject.link.cpp.thumb" value="true" valueType="boolean"/>
-								<option id="com.crt.advproject.link.cpp.fpu.1410263420" name="Floating point" superClass="com.crt.advproject.link.cpp.fpu" value="com.crt.advproject.link.cpp.fpu.fpv4.hard" valueType="enumerated"/>
+								<option id="com.crt.advproject.link.cpp.fpu.1410263420" name="Floating point" superClass="com.crt.advproject.link.cpp.fpu" value="com.crt.advproject.link.cpp.fpu.fpv4" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.cpp.manage.2070395384" name="Manage linker script" superClass="com.crt.advproject.link.cpp.manage" value="true" valueType="boolean"/>
 								<option id="com.crt.advproject.link.cpp.hdrlib.1593491072" name="Use C library" superClass="com.crt.advproject.link.cpp.hdrlib" value="com.crt.advproject.cpp.link.hdrlib.newlib.none" valueType="enumerated"/>
 								<option id="gnu.cpp.link.option.libs.225123596" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
@@ -86,6 +87,7 @@
 									<listOptionValue builtIn="false" value="LBED_LM4F120"/>
 									<listOptionValue builtIn="false" value="StelarisWare"/>
 									<listOptionValue builtIn="false" value="CMSISv2p00_LM4F120"/>
+									<listOptionValue builtIn="false" value="gcc"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.1756115890" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LM4F120_USERLIB/Debug}&quot;"/>

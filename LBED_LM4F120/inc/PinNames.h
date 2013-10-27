@@ -68,6 +68,8 @@ enum e_PinName {
       , J2_10 = PA_2
       , USBRX = PA_0
       , USBTX = PA_1
+      , SCL = PB_2
+      , SDA = PB_3
       , LEDR = J3_10
       , LEDB = J4_1
       , LEDG = J4_2

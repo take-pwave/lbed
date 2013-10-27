@@ -44,7 +44,7 @@ all: LBED_LM4F120_MAIN.axf
 LBED_LM4F120_MAIN.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU C++ Linker'
-	arm-none-eabi-c++ -nostartfiles -nostdlib -L"/Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/Debug" -L"/Users/take/proj/LBED/lbed/StelarisWare/Debug" -L"/Users/take/proj/LBED/lbed/LBED_LM4F120/Debug" -L"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Debug" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T LBED_LM4F120_MAIN_Debug.ld -o "LBED_LM4F120_MAIN.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-c++ -nostartfiles -nostdlib -L"/Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/Debug" -L"/Users/take/proj/LBED/lbed/StelarisWare/Debug" -L"/Users/take/proj/LBED/lbed/LBED_LM4F120/Debug" -L"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Debug" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T LBED_LM4F120_MAIN_Debug.ld -o "LBED_LM4F120_MAIN.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

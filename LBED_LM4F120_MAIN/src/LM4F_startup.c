@@ -37,6 +37,15 @@ extern void SystemInit (void);
 extern void SystemCoreClockUpdate (void);
 extern void wait_init(void);
 
+#include "inc/hw_types.h"
+#include "driverlib/rom.h"
+#include "driverlib/sysctl.h"
+#define ROM_FPUEnable                                                         \
+        ((void (*)(void))ROM_FPUTABLE[0])
+
+#define ROM_FPULazyStackingEnable                                             \
+        ((void (*)(void))ROM_FPUTABLE[4])
+
 // Main should be defined on your main file so it's extern.
 extern int main(void);
 // rst_handler contains the code to run on reset.
@@ -281,6 +290,8 @@ void rst_handler(void){
 	SystemCoreClockUpdate();
 #endif
     wait_init();
+	ROM_FPUEnable();
+    ROM_FPULazyStackingEnable();
 
 	// after setting copying .data to ram and "zero-ing" .bss we are good
 	// to start the main() method!
