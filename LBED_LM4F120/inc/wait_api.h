@@ -24,6 +24,8 @@ void wait_us(int us);
 
 void wait_init(void);
 
+void wait(double s);
+
 #ifdef __cplusplus
 }
 #endif

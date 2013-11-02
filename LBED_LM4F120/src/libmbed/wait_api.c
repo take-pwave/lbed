@@ -27,3 +27,11 @@ void wait_us(int us) {
 	while (i-- > 0)
 		continue;
 }
+
+void wait(double s) {
+	double dms = s*1000.0;
+	int	ms = (int)dms;
+	int us = (int)((dms - ms)*1000.0);
+	wait_ms(ms);
+	wait_us(us);
+}
