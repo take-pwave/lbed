@@ -6,6 +6,6 @@ int main(void) {
     DigitalOut	myled(LEDG);
     while(1) {
         myled = !sw1;	// SW1を押すとLow=0になるので、押したときにLEDを付けるために!を付ける。
-        wait_ms(1000);
+        wait_ms(200);
     }
 }

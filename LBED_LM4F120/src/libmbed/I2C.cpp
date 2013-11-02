@@ -15,9 +15,6 @@ I2C::I2C(PinName sda, PinName scl, const char *name) {
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_I2C0);
 	// For this example I2C0 is used with PortB[3:2].
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);
-	// Configure the pin muxing for I2C0 functions on port B2 and B3.
-	// GPIOPinConfigure(GPIO_PB2_I2C0SCL);
-	// GPIOPinConfigure(GPIO_PB3_I2C0SDA);
 	// Select the I2C function for these pins.
 	GPIOPinTypeI2CSCL(GPIO_PORTB_BASE, GPIO_PIN_2);	//	I2CSCL
 	GPIOPinTypeI2C(GPIO_PORTB_BASE, GPIO_PIN_3);	//	I2CSDA
@@ -50,12 +47,9 @@ int I2C::read(int address, char *data, int length, bool repeated) {
     return length;
 }
 
-// この関数の使い方がよく分からないので、たぶんこんな感じという実装
+// この関数の使い方がよく分からないので、ダミー関数
 int I2C::read(int ack) {
-	I2CMasterControl( I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_RECEIVE_START);
-    // Wait until done transmitting
-    while( I2CMasterBusy(I2C0_MASTER_BASE));
-	return I2CMasterDataGet(I2C0_MASTER_BASE);;
+	return -1;
 }
 
 int I2C::write(int address, const char *data, int length, bool repeated) {
@@ -83,11 +77,8 @@ int I2C::write(int address, const char *data, int length, bool repeated) {
     return length;
 }
 
-// この関数の使い方がよく分からないので、たぶんこんな感じという実装
+// この関数の使い方がよく分からないので、ダミー関数
 int I2C::write(int ack) {
-	I2CMasterDataPut( I2C0_MASTER_BASE, ack);
-	I2CMasterControl( I2C0_MASTER_BASE, I2C_MASTER_CMD_BURST_SEND_CONT);
-    while( I2CMasterBusy(I2C0_MASTER_BASE));
-    return 1;
+    return -1;
 }
 
