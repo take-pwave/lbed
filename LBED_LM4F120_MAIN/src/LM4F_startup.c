@@ -284,7 +284,7 @@ void rst_handler(void){
 	//
 	// Call C++ library initialisation
 	//
-	//__libc_init_array();
+	__libc_init_array();
 #ifdef __USE_CMSIS
 	SystemInit();
 	SystemCoreClockUpdate();

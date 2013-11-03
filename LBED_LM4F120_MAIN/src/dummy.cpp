@@ -5,6 +5,14 @@ extern "C"
 void __aeabi_unwind_cpp_pr1(void){}
 extern "C"
 void __aeabi_unwind_cpp_pr0(void){}
+// ねむいさんのsyscalls_if.hからよばれるので、ここでダミーを定義
+extern "C"
+void putch(int x){}
+extern "C"
+int getch(){ return -1; }
+// __libc_init_arrayから呼ばれる_initは、起動時に呼ばれる関数とあるので、これもダミーを定義
+extern "C"
+void _init(void){}
 
 #ifdef DEBUG
 void

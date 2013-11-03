@@ -24,7 +24,8 @@ void wait_us(int us);
 
 void wait_init(void);
 
-void wait(double s);
+// doubleからfloatへのキャストでハードエラーになるので、外した
+//void wait(double s);
 
 #ifdef __cplusplus
 }

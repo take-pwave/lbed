@@ -22,6 +22,10 @@ class Print
 	int printNumber(unsigned long, int);
 	int printFloat(double number, int digits);
 	public:
+
+	Print(){};
+	~Print(){};
+
     int write(const char *s) {
       if (s == 0) return 0;
       return write((const char *)s, Print::strlen(s));

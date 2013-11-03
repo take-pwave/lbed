@@ -2,9 +2,9 @@
 #ifndef MBED_I2CLCD_H
 #define MBED_I2CLCD_H
 
-#include "mbed.h"
+#include "lbed.h"
 
-class I2cLCD : public Stream {
+class I2cLCD : public Print {
 public:
 
     enum IconType {
@@ -39,14 +39,19 @@ public:
 protected:
     virtual int _putc(int value);
     virtual int _getc();
+    // 追加 Takemoto
+	virtual int write(const char c) {
+		_putc(c);
+		return 1;
+	}
 
     int address(int column, int row);
     void character(int column, int row, int c);
     void writeCommand( int cmd );
     void writeData( int data );
 
-    DigitalOut _rs;
     I2C    _i2c;
+    DigitalOut _rs;
     int _column;
     int _row;
 

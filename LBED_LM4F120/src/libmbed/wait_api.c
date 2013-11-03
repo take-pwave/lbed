@@ -27,11 +27,14 @@ void wait_us(int us) {
 	while (i-- > 0)
 		continue;
 }
-
+// doubleからfloatへのキャストでハードエラーになるので、外した
+#if 0
 void wait(double s) {
-	double dms = s*1000.0;
-	int	ms = (int)dms;
-	int us = (int)((dms - ms)*1000.0);
+	float fms = (float)s;
+	fms = fms*1000.0;
+	int	ms = (int)fms;
+	int us = (int)((fms - ms)*1000.0);
 	wait_ms(ms);
 	wait_us(us);
 }
+#endif

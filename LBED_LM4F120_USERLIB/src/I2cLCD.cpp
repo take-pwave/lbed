@@ -12,37 +12,41 @@
 
 #define CNTR_DEF    0x20
 
-unsigned char icon_data[]=
+// C++の配列の初期化がうまくできなていないので、処理は遅くなりますが、
+// auto変数で設定するように変更しました。Takemoto
+/*
+static unsigned char icon_data[]=
 {
-    0x00, 0x10,
-    0x02, 0x10,
-    0x04, 0x10,
-    0x06, 0x10,
+	0x00, 0x10,
+	0x02, 0x10,
+	0x04, 0x10,
+	0x06, 0x10,
 
-    0x07, 0x10,
-    0x07, 0x08,
-    0x09, 0x10,
-    0x0B, 0x10,
+	0x07, 0x10,
+	0x07, 0x08,
+	0x09, 0x10,
+	0x0B, 0x10,
 
-    0x0D, 0x08,
-    0x0D, 0x04,
-    0x0D, 0x02,
-    0x0D, 0x10,
+	0x0D, 0x08,
+	0x0D, 0x04,
+	0x0D, 0x02,
+	0x0D, 0x10,
 
-    0x0F, 0x10,
+	0x0F, 0x10,
 };
+*/
 
-I2cLCD::I2cLCD(PinName sda, PinName scl, PinName rp) :  _rs( rp ) , _i2c( sda , scl ){
+I2cLCD::I2cLCD(PinName sda, PinName scl, PinName rp) :  _i2c( sda , scl ), _rs( rp ) {
 
     contrast = CNTR_DEF;
     icon = 0;
 
-    wait(0.015);
+    wait_ms(15); //wait(0.015);
     // reset LOW->HIGH
     _rs = 0;
-    wait(0.01);
+    wait_ms(10); //wait(0.01);
     _rs = 1;
-    wait(0.05);
+    wait_ms(50); //wait(0.05);
 
     writeCommand(FUNC_SET1);
     writeCommand(FUNC_SET2);
@@ -52,7 +56,7 @@ I2cLCD::I2cLCD(PinName sda, PinName scl, PinName rp) :  _rs( rp ) , _i2c( sda , 
     writeCommand(0x5C | ((contrast >> 4) & 0x3));
 
     writeCommand(0x6C);
-    wait(0.3);
+    wait_ms(300); //wait(0.3);
 
     writeCommand(0x38); // function set
     writeCommand(0x0C); // Display On
@@ -71,7 +75,7 @@ void I2cLCD::character(int column, int row, int c) {
 
 void I2cLCD::cls() {
     writeCommand(0x01); // cls, and set cursor to 0
-    wait(0.00164f);     // This command takes 1.64 ms
+    wait_ms(1); wait_us(640); //wait(0.00164f);     // This command takes 1.64 ms
     locate(0, 0);
 }
 
@@ -150,11 +154,29 @@ void I2cLCD::clearicon(IconType type)
     puticon( icon );
 }
 
-
 void I2cLCD::puticon(int flg)
 {
-    static unsigned char icon_buff[16];
     unsigned char i;
+    static unsigned char icon_buff[16];
+    unsigned char icon_data[] = {
+    		0x00, 0x10,
+    		0x02, 0x10,
+    		0x04, 0x10,
+    		0x06, 0x10,
+
+    		0x07, 0x10,
+    		0x07, 0x08,
+    		0x09, 0x10,
+    		0x0B, 0x10,
+
+    		0x0D, 0x08,
+    		0x0D, 0x04,
+    		0x0D, 0x02,
+    		0x0D, 0x10,
+
+    		0x0F, 0x10,
+    	};
+
 
     for(i=0;i<sizeof(icon_data)/2;i++)
     {
