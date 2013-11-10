@@ -1,9 +1,9 @@
 #include"lbed.h"
 
-DigitalOut myled(LEDG);
 
 int main(void) {
 	Serial pc(PA_1, PA_0);
+	DigitalOut myled(LEDG);
 	pc.baud(19200);
 	pc.println("Hello");
 	while (1) {

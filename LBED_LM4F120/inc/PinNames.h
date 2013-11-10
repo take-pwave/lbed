@@ -75,6 +75,18 @@ enum e_PinName {
       , LEDG = J4_2
       , SW2 = J2_4
       , SW1 = J4_10
+      , A0 = PE_3
+      , A1 = PE_2
+      , A2 = PE_1
+      , A3 = PE_0
+      , A4 = PD_3
+      , A5 = PD_2
+      , A6 = PD_1
+      , A7 = PD_0
+      , A8 = PE_5
+      , A9 = PE_4
+      , A10 = PB_4
+      , A11 = PD_5
 
 };
 

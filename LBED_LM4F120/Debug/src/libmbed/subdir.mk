@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/libmbed/AnalogIn.cpp \
 ../src/libmbed/BusOut.cpp \
 ../src/libmbed/DigitalIn.cpp \
 ../src/libmbed/DigitalOut.cpp \
@@ -16,6 +17,7 @@ C_SRCS += \
 ../src/libmbed/wait_api.c 
 
 OBJS += \
+./src/libmbed/AnalogIn.o \
 ./src/libmbed/BusOut.o \
 ./src/libmbed/DigitalIn.o \
 ./src/libmbed/DigitalOut.o \
@@ -29,6 +31,7 @@ C_DEPS += \
 ./src/libmbed/wait_api.d 
 
 CPP_DEPS += \
+./src/libmbed/AnalogIn.d \
 ./src/libmbed/BusOut.d \
 ./src/libmbed/DigitalIn.d \
 ./src/libmbed/DigitalOut.d \
@@ -42,7 +45,7 @@ CPP_DEPS += \
 src/libmbed/%.o: ../src/libmbed/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C++ Compiler'
-	arm-none-eabi-c++ -D__USE_CMSIS=CMSISv2p00_LPC13xx -DPART_LM4F120H5QR -DCPP_USE_HEAP -D__NEWLIB__ -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include" -I"/Users/take/proj/LBED/lbed/LBED_LM4F120/inc" -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include" -I"/Users/take/proj/LBED/lbed/StelarisWare/StellarisWare" -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -mcpu=cortex-m4 -mfpu=vfp -mfloat-abi=softfp -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-c++ -D__USE_CMSIS=CMSISv2p00_LPC13xx -DPART_LM4F120H5QR -DCPP_USE_HEAP -D__NEWLIB__ -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include" -I"/Users/take/proj/LBED/lbed/LBED_LM4F120/inc" -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include" -I"/Users/take/proj/LBED/lbed/StelarisWare/StellarisWare" -O0 -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections  -fno-rtti -fno-exceptions -mcpu=cortex-m4 -mfpu=vfp -mfloat-abi=softfp -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -8,5 +8,6 @@
 #include "print.h"
 #include "Serial.h"
 #include "I2C.h"
+#include "AnalogIn.h"
 
 #endif

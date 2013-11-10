@@ -50,7 +50,7 @@
 								</option>
 								<option id="com.crt.advproject.cpp.arch.209777945" name="Architecture" superClass="com.crt.advproject.cpp.arch" value="com.crt.advproject.cpp.target.cm4" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.thumb.497127147" name="Thumb mode" superClass="com.crt.advproject.cpp.thumb" value="true" valueType="boolean"/>
-								<option id="gnu.cpp.compiler.option.other.other.1036466654" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.other.other.1036466654" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections  -fno-rtti -fno-exceptions" valueType="string"/>
 								<option id="com.crt.advproject.cpp.fpu.1961354106" name="Floating point" superClass="com.crt.advproject.cpp.fpu" value="com.crt.advproject.cpp.fpu.vfp" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.545292971" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>

@@ -4,7 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/TestI2cLCD.cpp \
+../src/TestAnalogIn.cpp \
 ../src/cr_cpp_config.cpp \
 ../src/dummy.cpp 
 
@@ -14,7 +14,7 @@ C_SRCS += \
 
 OBJS += \
 ./src/LM4F_startup.o \
-./src/TestI2cLCD.o \
+./src/TestAnalogIn.o \
 ./src/cr_cpp_config.o \
 ./src/dummy.o \
 ./src/syscalls.o 
@@ -24,7 +24,7 @@ C_DEPS += \
 ./src/syscalls.d 
 
 CPP_DEPS += \
-./src/TestI2cLCD.d \
+./src/TestAnalogIn.d \
 ./src/cr_cpp_config.d \
 ./src/dummy.d 
 
