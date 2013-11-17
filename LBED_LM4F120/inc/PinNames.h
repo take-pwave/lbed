@@ -87,6 +87,22 @@ enum e_PinName {
       , A9 = PE_4
       , A10 = PB_4
       , A11 = PD_5
+      , T1CCP1 = PB_5
+      , T2CCP0 = PB_0
+      , T2CCP1 = PB_1
+      , T1CCP0 = PB_4
+      , T3CCP0 = PB_2
+      , T0CCP1 = PB_7
+      , T0CCP0 = PB_6
+      , T3CCP1 = PB_3
+      , PWM0 = PB_5
+      , PWM1 = PB_0
+      , PWM2 = PB_1
+      , PWM3 = PB_4
+      , PWM4 = PB_2
+      , PWM5 = PB_7
+      , PWM6 = PB_6
+      , PWM7 = PB_3
 
 };
 

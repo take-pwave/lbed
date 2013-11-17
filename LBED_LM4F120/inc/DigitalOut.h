@@ -29,6 +29,7 @@ public:
 	void write(int value)
 	{
 		if (_gpio) {
+			_gpio->DIR |= _mask;
 			if (value) {
 				_gpio->DATA |= _mask;
 			} else {

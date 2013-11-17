@@ -9,5 +9,6 @@
 #include "Serial.h"
 #include "I2C.h"
 #include "AnalogIn.h"
+#include "PwmOut.h"
 
 #endif

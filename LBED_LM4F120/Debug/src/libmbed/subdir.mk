@@ -10,6 +10,7 @@ CPP_SRCS += \
 ../src/libmbed/DigitalOut.cpp \
 ../src/libmbed/I2C.cpp \
 ../src/libmbed/Print.cpp \
+../src/libmbed/PwmOut.cpp \
 ../src/libmbed/Serial.cpp \
 ../src/libmbed/pure_virtual.cpp 
 
@@ -23,6 +24,7 @@ OBJS += \
 ./src/libmbed/DigitalOut.o \
 ./src/libmbed/I2C.o \
 ./src/libmbed/Print.o \
+./src/libmbed/PwmOut.o \
 ./src/libmbed/Serial.o \
 ./src/libmbed/pure_virtual.o \
 ./src/libmbed/wait_api.o 
@@ -37,6 +39,7 @@ CPP_DEPS += \
 ./src/libmbed/DigitalOut.d \
 ./src/libmbed/I2C.d \
 ./src/libmbed/Print.d \
+./src/libmbed/PwmOut.d \
 ./src/libmbed/Serial.d \
 ./src/libmbed/pure_virtual.d 
 
@@ -52,7 +55,7 @@ src/libmbed/%.o: ../src/libmbed/%.cpp
 src/libmbed/%.o: ../src/libmbed/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC13xx -DPART_LM4F120H5QR -D__NEWLIB__ -DDEBUG -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include" -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include" -I"/Users/take/proj/LBED/lbed/LBED_LM4F120/inc" -I"/Users/take/proj/LBED/lbed/StelarisWare/StellarisWare" -O0 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m4 -mfpu=vfp -mfloat-abi=softfp -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-gcc -DPART_LM4F120H5QR -D__NEWLIB__ -DDEBUG -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Include" -I"/Users/take/proj/LBED/lbed/CMSISv2p00_LM4F120/Device/TI/LM4F/Include" -I"/Users/take/proj/LBED/lbed/LBED_LM4F120/inc" -I"/Users/take/proj/LBED/lbed/StelarisWare/StellarisWare" -O0 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m4 -mfpu=vfp -mfloat-abi=softfp -mthumb -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
