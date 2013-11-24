@@ -22,10 +22,26 @@ void wait_ms(int ms) {
 	  while ((msTicks - curTicks) < ms);
 }
 
+static inline void __NOP(void)
+{
+ asm(" nop");
+}
+
 void wait_us(int us) {
+	/*
 	volatile long i = 8*us;	// 仮の値
 	while (i-- > 0)
 		continue;
+	*/
+	/* This is the stupid method */
+	while(us--){
+					__NOP();
+					__NOP();
+					__NOP();
+					__NOP();
+					__NOP();
+					__NOP();
+					}
 }
 // doubleからfloatへのキャストでハードエラーになるので、外した
 #if 0

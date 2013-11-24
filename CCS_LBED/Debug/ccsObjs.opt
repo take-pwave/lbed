@@ -1,1 +1,1 @@
-"./src/wait_api.obj" "./src/pure_virtual.obj" "./src/Serial.obj" "./src/Print.obj" "./src/I2C.obj" "./src/DigitalOut.obj" "./src/DigitalIn.obj" "./src/BusOut.obj" 
+"./src/wait_api.obj" "./src/pure_virtual.obj" "./src/Serial.obj" "./src/PwmOut.obj" "./src/Print.obj" "./src/I2C.obj" "./src/DigitalOut.obj" "./src/DigitalIn.obj" "./src/BusOut.obj" 

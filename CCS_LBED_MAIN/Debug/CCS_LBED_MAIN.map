@@ -1,33 +1,35 @@
 ******************************************************************************
                   TMS470 Linker PC v4.9.5                      
 ******************************************************************************
->> Linked Mon Nov 04 14:51:48 2013
+>> Linked Sun Nov 17 16:13:54 2013
 
 OUTPUT FILE NAME:   <CCS_LBED_MAIN.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 000008b1
+ENTRY POINT SYMBOL: "_c_int00"  address: 000021f1
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  FLASH                 00000000   00040000  00000a64  0003f59c  R  X
-  SRAM                  20000000   00008000  0000011c  00007ee4  RW X
+  FLASH                 00000000   00040000  000027ca  0003d836  R  X
+  SRAM                  20000000   00008000  00000144  00007ebc  RW X
 
 
 SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00000a68   00000a68    r-x
+00000000    00000000    000027d0   000027d0    r-x
   00000000    00000000    0000026c   0000026c    r-- .intvecs
-  0000026c    0000026c    000007c0   000007c0    r-x .text
-  00000a30    00000a30    00000038   00000038    r-- .cinit
+  0000026c    0000026c    00002294   00002294    r-x .text
+  00002500    00002500    00000282   00000282    r-- .const
+  00002788    00002788    00000048   00000048    r-- .cinit
 20000000    20000000    00000100   00000000    rw-
   20000000    20000000    00000100   00000000    rw- .stack
-20000100    20000100    0000001c   00000018    rw-
-  20000100    20000100    00000018   00000018    rw- .data
-  20000118    20000118    00000004   00000000    rw- .bss
+20000100    20000100    00000048   00000024    rw-
+  20000100    20000100    00000024   00000024    rw- .data
+  20000124    20000124    00000018   00000000    rw- .bss
+  20000140    20000140    00000008   00000000    rw- .sysmem
 
 
 SECTION ALLOCATION MAP
@@ -38,58 +40,139 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    0000026c     
                   00000000    0000026c     startup_ccs.obj (.intvecs)
 
-.text      0    0000026c    000007c0     
-                  0000026c    000002c0     CCS_LBED.lib : DigitalIn.obj (.text)
-                  0000052c    000000f4                  : wait_api.obj (.text)
-                  00000620    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
-                  000006bc    00000094                                   : auto_init.obj (.text)
-                  00000750    00000060     system_LM4F.obj (.text)
-                  000007b0    0000005e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text)
-                  0000080e    00000056     CCS_LBED.lib : DigitalOut.obj (.text)
-                  00000864    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
-                  000008b0    00000048                                   : boot.obj (.text)
-                  000008f8    00000044                                   : exit.obj (.text)
-                  0000093c    0000003c     TestLED.obj (.text:_ZN10DigitalOut5writeEi)
-                  00000978    00000034     TestLED.obj (.text)
-                  000009ac    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
-                  000009c4    00000018                                   : args_main.obj (.text)
-                  000009dc    00000012     TestLED.obj (.text:_ZN10DigitalOutaSEi)
-                  000009ee    00000012     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
-                  00000a00    0000000e                                   : copy_decompress_none.obj (.text:decompress:none)
-                  00000a0e    0000000c     TestLED.obj (.text:_ZN9DigitalIncviEv)
-                  00000a1a    0000000c     startup_ccs.obj (.text)
-                  00000a26    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+.text      0    0000026c    00002294     
+                  0000026c    00000646     CCS_LBED.lib : Print.obj (.text)
+                  000008b2    00000002                  : pure_virtual.obj (.text)
+                  000008b4    000003e0     rtsv7M4_T_le_v4SPD16_eabi.lib : memory.obj (.text)
+                  00000c94    00000374     CCS_LBED_USERLIB.lib : I2cLCD.obj (.text)
+                  00001008    000002c0     CCS_LBED.lib : DigitalIn.obj (.text)
+                  000012c8    000001d8     driverlib-cm4f.lib : sysctl.obj (.text:SysCtlClockGet)
+                  000014a0    000001c8     CCS_LBED.lib : I2C.obj (.text)
+                  00001668    000001b6     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_add_t2.obj (.text)
+                  0000181e    00000136                                   : fd_div_t2.obj (.text)
+                  00001954    00000104     CCS_LBED.lib : wait_api.obj (.text)
+                  00001a58    000000fc     rtsv7M4_T_le_v4SPD16_eabi.lib : fd_mul_t2.obj (.text)
+                  00001b54    000000e2     TestI2cLCD.obj (.text)
+                  00001c36    000000c8     driverlib-cm4f.lib : gpio.obj (.text:GPIOPadConfigSet)
+                  00001cfe    00000002     --HOLE-- [fill = 0]
+                  00001d00    000000c0     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.text)
+                  00001dc0    0000009c                                   : memcpy_t2.obj (.text)
+                  00001e5c    00000094                                   : auto_init.obj (.text)
+                  00001ef0    0000007e                                   : fd_cmp_t2.obj (.text)
+                  00001f6e    00000002     --HOLE-- [fill = 0]
+                  00001f70    00000078     driverlib-cm4f.lib : gpio.obj (.text:GPIOPinTypeI2CSCL)
+                  00001fe8    00000060     system_LM4F.obj (.text)
+                  00002048    0000005e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text)
+                  000020a6    00000002     --HOLE-- [fill = 0]
+                  000020a8    00000058     driverlib-cm4f.lib : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  00002100    00000056     CCS_LBED.lib : DigitalOut.obj (.text)
+                  00002156    00000002     --HOLE-- [fill = 0]
+                  00002158    0000004c     driverlib-cm4f.lib : i2c.obj (.text:I2CMasterInitExpClk)
+                  000021a4    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
+                  000021f0    00000048                                   : boot.obj (.text)
+                  00002238    00000048                                   : fd_toi_t2.obj (.text)
+                  00002280    00000044                                   : exit.obj (.text)
+                  000022c4    00000044                                   : fd_tou_t2.obj (.text)
+                  00002308    0000003c     CCS_LBED_USERLIB.lib : I2cLCD.obj (.text:_ZN10DigitalOut5writeEi)
+                  00002344    0000002e     driverlib-cm4f.lib : gpio.obj (.text:GPIODirModeSet)
+                  00002372    0000002e     rtsv7M4_T_le_v4SPD16_eabi.lib : i_tofd_t2.obj (.text)
+                  000023a0    00000026     CCS_LBED.lib : Print.obj (.text:_ZN5Print5writeEPKc)
+                  000023c6    00000026                  : Print.obj (.text:_ZN5Print6strlenEPKc)
+                  000023ec    00000020     rtsv7M4_T_le_v4SPD16_eabi.lib : u_tofd_t2.obj (.text)
+                  0000240c    0000001a     CCS_LBED_USERLIB.lib : I2cLCD.obj (.text:_ZN6I2cLCD5writeEc)
+                  00002426    00000002     --HOLE-- [fill = 0]
+                  00002428    00000018                          : I2cLCD.obj (.text:_ZN5PrintC1Ev)
+                  00002440    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
+                  00002458    00000018                                   : args_main.obj (.text)
+                  00002470    00000012     driverlib-cm4f.lib : gpio.obj (.text:GPIOPinTypeI2C)
+                  00002482    00000012     CCS_LBED_USERLIB.lib : I2cLCD.obj (.text:_ZN10DigitalOutaSEi)
+                  00002494    00000012     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
+                  000024a6    0000000e                                   : copy_decompress_none.obj (.text:decompress:none)
+                  000024b4    0000000c     CCS_LBED_USERLIB.lib : I2cLCD.obj (.text:_ZN5PrintC2Ev)
+                  000024c0    0000000c     startup_ccs.obj (.text)
+                  000024cc    0000000a     driverlib-cm4f.lib : i2c.obj (.text:I2CMasterEnable)
+                  000024d6    00000008                        : i2c.obj (.text:I2CMasterBusy)
+                  000024de    00000008                        : i2c.obj (.text:I2CMasterSlaveAddrSet)
+                  000024e6    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : delete.obj (.text)
+                  000024ee    00000006                                   : copy_decompress_rle.obj (.text:decompress:rle24)
+                  000024f4    00000004     driverlib-cm4f.lib : i2c.obj (.text:I2CMasterControl)
+                  000024f8    00000004                        : i2c.obj (.text:I2CMasterDataGet)
+                  000024fc    00000004                        : i2c.obj (.text:I2CMasterDataPut)
 
-.cinit     0    00000a30    00000038     
-                  00000a30    00000012     (.cinit..data.load) [load image, compression = rle]
-                  00000a42    00000002     --HOLE-- [fill = 0]
-                  00000a44    0000000c     (__TI_handler_table)
-                  00000a50    00000008     (.cinit..bss.load) [load image, compression = zero_init]
-                  00000a58    00000010     (__TI_cinit_table)
+.const     0    00002500    00000282     
+                  00002500    0000006c     driverlib-cm4f.lib : sysctl.obj (.const:g_pulXtals)
+                  0000256c    00000040                        : sysctl.obj (.const)
+                  000025ac    00000028     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.const:_ZTSN10__cxxabiv123__fundamental_type_infoE)
+                  000025d4    00000025                                   : typeinfo_.obj (.const:_ZTSN10__cxxabiv120__si_class_type_infoE)
+                  000025f9    00000003     --HOLE-- [fill = 0]
+                  000025fc    00000024                                   : typeinfo_.obj (.const:_ZTSN10__cxxabiv119__pointer_type_infoE)
+                  00002620    00000022                                   : typeinfo_.obj (.const:_ZTSN10__cxxabiv117__class_type_infoE)
+                  00002642    00000002     --HOLE-- [fill = 0]
+                  00002644    00000022                                   : typeinfo_.obj (.const:_ZTSN10__cxxabiv117__pbase_type_infoE)
+                  00002666    00000002     --HOLE-- [fill = 0]
+                  00002668    0000001a     CCS_LBED_USERLIB.lib : I2cLCD.obj (.const)
+                  00002682    00000002     --HOLE-- [fill = 0]
+                  00002684    00000018                          : I2cLCD.obj (.const:_ZTV6I2cLCD)
+                  0000269c    00000010     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.const:_ZTIPKe)
+                  000026ac    00000010     CCS_LBED.lib : Print.obj (.const:_ZTV5Print)
+                  000026bc    00000010     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.const:_ZTVN10__cxxabiv117__class_type_infoE)
+                  000026cc    00000010                                   : typeinfo_.obj (.const:_ZTVN10__cxxabiv119__pointer_type_infoE)
+                  000026dc    00000010                                   : typeinfo_.obj (.const:_ZTVN10__cxxabiv120__si_class_type_infoE)
+                  000026ec    00000010                                   : typeinfo_.obj (.const:_ZTVN10__cxxabiv123__fundamental_type_infoE)
+                  000026fc    0000000d                                   : typeinfo_.obj (.const:_ZTSSt9type_info)
+                  00002709    00000003     --HOLE-- [fill = 0]
+                  0000270c    0000000c     CCS_LBED_USERLIB.lib : I2cLCD.obj (.const:_ZTI6I2cLCD)
+                  00002718    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.const:_ZTIN10__cxxabiv117__class_type_infoE)
+                  00002724    0000000c                                   : typeinfo_.obj (.const:_ZTIN10__cxxabiv117__pbase_type_infoE)
+                  00002730    0000000c                                   : typeinfo_.obj (.const:_ZTIN10__cxxabiv119__pointer_type_infoE)
+                  0000273c    0000000c                                   : typeinfo_.obj (.const:_ZTIN10__cxxabiv120__si_class_type_infoE)
+                  00002748    0000000c                                   : typeinfo_.obj (.const:_ZTIN10__cxxabiv123__fundamental_type_infoE)
+                  00002754    00000008     CCS_LBED.lib : Print.obj (.const:_ZTI5Print)
+                  0000275c    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.const:_ZTISt9type_info)
+                  00002764    00000008                                   : typeinfo_.obj (.const:_ZTIe)
+                  0000276c    00000008     CCS_LBED_USERLIB.lib : I2cLCD.obj (.const:_ZTS6I2cLCD)
+                  00002774    00000007     CCS_LBED.lib : Print.obj (.const:_ZTS5Print)
+                  0000277b    00000001     --HOLE-- [fill = 0]
+                  0000277c    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.const:_ZTSPKe)
+                  00002780    00000002                                   : typeinfo_.obj (.const:_ZTSe)
+
+.cinit     0    00002788    00000048     
+                  00002788    0000001e     (.cinit..data.load) [load image, compression = rle]
+                  000027a6    00000002     --HOLE-- [fill = 0]
+                  000027a8    0000000c     (__TI_handler_table)
+                  000027b4    00000004     --HOLE-- [fill = 0]
+                  000027b8    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  000027c0    00000010     (__TI_cinit_table)
 
 .stack     0    20000000    00000100     UNINITIALIZED
                   20000000    00000100     --HOLE--
 
-.data      0    20000100    00000018     
-                  20000100    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
-                  20000108    00000008                                   : exit.obj (.data)
-                  20000110    00000004                                   : stkdepth_vars.obj (.data)
-                  20000114    00000004     system_LM4F.obj (.data)
+.data      0    20000100    00000024     
+                  20000100    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : memory.obj (.data)
+                  2000010c    00000008                                   : _lock.obj (.data)
+                  20000114    00000008                                   : exit.obj (.data)
+                  2000011c    00000004                                   : stkdepth_vars.obj (.data)
+                  20000120    00000004     system_LM4F.obj (.data)
 
-.bss       0    20000118    00000004     UNINITIALIZED
-                  20000118    00000004     CCS_LBED.lib : wait_api.obj (.bss)
+.bss       0    20000124    00000018     UNINITIALIZED
+                  20000124    00000010     CCS_LBED_USERLIB.lib : I2cLCD.obj (.bss)
+                  20000134    00000004     CCS_LBED.lib : wait_api.obj (.bss)
+                  20000138    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : typeinfo_.obj (.bss)
+
+.sysmem    0    20000140    00000008     UNINITIALIZED
+                  20000140    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : memory.obj (.sysmem)
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00000a58 records: 2, size/record: 8, table size: 16
-	.data: load addr=00000a30, load size=00000012 bytes, run addr=20000100, run size=00000018 bytes, compression=rle
-	.bss: load addr=00000a50, load size=00000008 bytes, run addr=20000118, run size=00000004 bytes, compression=zero_init
+__TI_cinit_table @ 000027c0 records: 2, size/record: 8, table size: 16
+	.data: load addr=00002788, load size=0000001e bytes, run addr=20000100, run size=00000024 bytes, compression=rle
+	.bss: load addr=000027b8, load size=00000008 bytes, run addr=20000124, run size=00000018 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 00000a44 records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 000027a8 records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_decompress_rle24
 	index: 1, handler: __TI_decompress_none
 	index: 2, handler: __TI_zero_init
@@ -99,70 +182,206 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 
 address    name
 --------   ----
-000008f9   C$$EXIT
-00000a1b   ResetISR
+00002281   C$$EXIT
+00002345   GPIODirModeSet
+00001c37   GPIOPadConfigSet
+00002471   GPIOPinTypeI2C
+00001f71   GPIOPinTypeI2CSCL
+000024d7   I2CMasterBusy
+000024f5   I2CMasterControl
+000024f9   I2CMasterDataGet
+000024fd   I2CMasterDataPut
+000024cd   I2CMasterEnable
+00002159   I2CMasterInitExpClk
+000024df   I2CMasterSlaveAddrSet
+000024c1   ResetISR
 UNDEFED    SHT$$INIT_ARRAY$$Base
 UNDEFED    SHT$$INIT_ARRAY$$Limit
-000005a1   SysTick_Handler
-20000114   SystemCoreClock
-00000751   SystemCoreClockUpdate
-00000761   SystemInit
-00000839   _ZN10DigitalOut5setupEiPKc
-0000093d   _ZN10DigitalOut5writeEi
-0000081d   _ZN10DigitalOutC1EiPKc
-0000080f   _ZN10DigitalOutC1Ev
-0000081d   _ZN10DigitalOutC2EiPKc
-0000080f   _ZN10DigitalOutC2Ev
-000009dd   _ZN10DigitalOutaSEi
-00000445   _ZN9DigitalIn4modeEi
-0000041f   _ZN9DigitalIn4readEv
-000002b7   _ZN9DigitalIn5setupEiPKc
-0000028d   _ZN9DigitalInC1EiPKc
-0000026d   _ZN9DigitalInC1Ev
-0000028d   _ZN9DigitalInC2EiPKc
-0000026d   _ZN9DigitalInC2Ev
-00000a0f   _ZN9DigitalIncviEv
+000012c9   SysCtlClockGet
+000020a9   SysCtlPeripheralEnable
+000019cd   SysTick_Handler
+20000120   SystemCoreClock
+00001fe9   SystemCoreClockUpdate
+00001ff9   SystemInit
+0000212b   _ZN10DigitalOut5setupEiPKc
+00002309   _ZN10DigitalOut5writeEi
+0000210f   _ZN10DigitalOutC1EiPKc
+00002101   _ZN10DigitalOutC1Ev
+0000210f   _ZN10DigitalOutC2EiPKc
+00002101   _ZN10DigitalOutC2Ev
+00002483   _ZN10DigitalOutaSEi
+00001daf   _ZN10__cxxabiv116__enum_type_infoD0Ev
+00001dad   _ZN10__cxxabiv116__enum_type_infoD1Ev
+00001dad   _ZN10__cxxabiv116__enum_type_infoD2Ev
+00001da5   _ZN10__cxxabiv117__array_type_infoD0Ev
+00001da3   _ZN10__cxxabiv117__array_type_infoD1Ev
+00001da3   _ZN10__cxxabiv117__array_type_infoD2Ev
+00001d9b   _ZN10__cxxabiv117__class_type_infoD0Ev
+00001d99   _ZN10__cxxabiv117__class_type_infoD1Ev
+00001d99   _ZN10__cxxabiv117__class_type_infoD2Ev
+00001d91   _ZN10__cxxabiv117__pbase_type_infoD0Ev
+00001d8f   _ZN10__cxxabiv117__pbase_type_infoD1Ev
+00001d8f   _ZN10__cxxabiv117__pbase_type_infoD2Ev
+00001d87   _ZN10__cxxabiv119__pointer_type_infoD0Ev
+00001d85   _ZN10__cxxabiv119__pointer_type_infoD1Ev
+00001d85   _ZN10__cxxabiv119__pointer_type_infoD2Ev
+00001d7d   _ZN10__cxxabiv120__function_type_infoD0Ev
+00001d7b   _ZN10__cxxabiv120__function_type_infoD1Ev
+00001d7b   _ZN10__cxxabiv120__function_type_infoD2Ev
+00001d73   _ZN10__cxxabiv120__si_class_type_infoD0Ev
+00001d71   _ZN10__cxxabiv120__si_class_type_infoD1Ev
+00001d71   _ZN10__cxxabiv120__si_class_type_infoD2Ev
+00001d69   _ZN10__cxxabiv121__vmi_class_type_infoD0Ev
+00001d67   _ZN10__cxxabiv121__vmi_class_type_infoD1Ev
+00001d67   _ZN10__cxxabiv121__vmi_class_type_infoD2Ev
+00001d5f   _ZN10__cxxabiv123__fundamental_type_infoD0Ev
+00001d5d   _ZN10__cxxabiv123__fundamental_type_infoD1Ev
+00001d5d   _ZN10__cxxabiv123__fundamental_type_infoD2Ev
+00001d55   _ZN10__cxxabiv129__pointer_to_member_type_infoD0Ev
+00001d53   _ZN10__cxxabiv129__pointer_to_member_type_infoD1Ev
+00001d53   _ZN10__cxxabiv129__pointer_to_member_type_infoD2Ev
+00001591   _ZN3I2C4readEi
+000014e7   _ZN3I2C4readEiPcib
+0000164b   _ZN3I2C5writeEi
+000015a1   _ZN3I2C5writeEiPKcib
+000014a1   _ZN3I2CC1EiiPKc
+000014a1   _ZN3I2CC2EiiPKc
+000002d9   _ZN5Print10printFloatEdi
+0000026d   _ZN5Print11printNumberEmi
+0000045b   _ZN5Print5printEPKc
+0000046b   _ZN5Print5printEc
+00000527   _ZN5Print5printEdi
+00000483   _ZN5Print5printEii
+00000497   _ZN5Print5printEli
+000004ff   _ZN5Print5printEmi
+000023a1   _ZN5Print5writeEPKc
+00000871   _ZN5Print5writeEPKci
+000005e5   _ZN5Print6printfEPKcz
+000023c7   _ZN5Print6strlenEPKc
+00000585   _ZN5Print7printlnEPKc
+000005ad   _ZN5Print7printlnEc
+00000551   _ZN5Print7printlnEv
+00002429   _ZN5PrintC1Ev
+000024b5   _ZN5PrintC2Ev
+00000fa5   _ZN6I2cLCD12writeCommandEi
+00000d83   _ZN6I2cLCD3clsEv
+00000da9   _ZN6I2cLCD4rowsEv
+00000f51   _ZN6I2cLCD5_getcEv
+00000ed5   _ZN6I2cLCD5_putcEi
+0000240d   _ZN6I2cLCD5writeEc
+00000d69   _ZN6I2cLCD6locateEii
+00000f5f   _ZN6I2cLCD7addressEii
+00000db5   _ZN6I2cLCD7columnsEv
+00000e01   _ZN6I2cLCD7puticonEi
+00000dc1   _ZN6I2cLCD7seticonENS_8IconTypeE
+00000f77   _ZN6I2cLCD9characterEiii
+00000de1   _ZN6I2cLCD9cleariconENS_8IconTypeE
+00000fd3   _ZN6I2cLCD9writeDataEi
+00000c95   _ZN6I2cLCDC1Eiii
+00000c95   _ZN6I2cLCDC2Eiii
+000011e1   _ZN9DigitalIn4modeEi
+000011bb   _ZN9DigitalIn4readEv
+00001053   _ZN9DigitalIn5setupEiPKc
+00001029   _ZN9DigitalInC1EiPKc
+00001009   _ZN9DigitalInC1Ev
+00001029   _ZN9DigitalInC2EiPKc
+00001009   _ZN9DigitalInC2Ev
+00001d13   _ZNKSt9type_info4nameEv
+00001d43   _ZNKSt9type_info6beforeERKS_
+00001d2d   _ZNKSt9type_infoeqERKS_
+00001d17   _ZNKSt9type_infoneERKS_
+00001d0b   _ZNSt9type_infoD0Ev
+00001d09   _ZNSt9type_infoD1Ev
+00001d09   _ZNSt9type_infoD2Ev
+20000138   _ZSt16__dummy_typeinfo
+00001d01   _ZSt21__gen_dummy_typeinfosv
+00002754   _ZTI5Print
+0000270c   _ZTI6I2cLCD
+00002718   _ZTIN10__cxxabiv117__class_type_infoE
+00002724   _ZTIN10__cxxabiv117__pbase_type_infoE
+00002730   _ZTIN10__cxxabiv119__pointer_type_infoE
+0000273c   _ZTIN10__cxxabiv120__si_class_type_infoE
+00002748   _ZTIN10__cxxabiv123__fundamental_type_infoE
+0000269c   _ZTIPKe
+0000275c   _ZTISt9type_info
+00002764   _ZTIe
+00002774   _ZTS5Print
+0000276c   _ZTS6I2cLCD
+00002620   _ZTSN10__cxxabiv117__class_type_infoE
+00002644   _ZTSN10__cxxabiv117__pbase_type_infoE
+000025fc   _ZTSN10__cxxabiv119__pointer_type_infoE
+000025d4   _ZTSN10__cxxabiv120__si_class_type_infoE
+000025ac   _ZTSN10__cxxabiv123__fundamental_type_infoE
+0000277c   _ZTSPKe
+000026fc   _ZTSSt9type_info
+00002780   _ZTSe
+000026ac   _ZTV5Print
+00002684   _ZTV6I2cLCD
+000026bc   _ZTVN10__cxxabiv117__class_type_infoE
+000026cc   _ZTVN10__cxxabiv119__pointer_type_infoE
+000026dc   _ZTVN10__cxxabiv120__si_class_type_infoE
+000026ec   _ZTVN10__cxxabiv123__fundamental_type_infoE
+000024e7   _ZdlPv
 20000100   __STACK_END
 00000100   __STACK_SIZE
 20000100   __STACK_TOP
-00000a58   __TI_CINIT_Base
-00000a68   __TI_CINIT_Limit
-00000a44   __TI_Handler_Table_Base
-00000a50   __TI_Handler_Table_Limit
+00000008   __SYSMEM_SIZE
+000027c0   __TI_CINIT_Base
+000027d0   __TI_CINIT_Limit
+000027a8   __TI_Handler_Table_Base
+000027b4   __TI_Handler_Table_Limit
 00000001   __TI_args_main
-000006bd   __TI_auto_init
-00000a01   __TI_decompress_none
-00000a27   __TI_decompress_rle24
+00001e5d   __TI_auto_init
+000024a7   __TI_decompress_none
+000024ef   __TI_decompress_rle24
 00000000   __TI_static_base__
-000009ef   __TI_zero_init
-00000621   __aeabi_memcpy
-00000621   __aeabi_memcpy4
-00000621   __aeabi_memcpy8
+00002495   __TI_zero_init
+00001ef1   __aeabi_cdcmpeq
+00001ef1   __aeabi_cdcmple
+00002239   __aeabi_d2iz
+000022c5   __aeabi_d2uiz
+00001673   __aeabi_dadd
+0000181f   __aeabi_ddiv
+00001a59   __aeabi_dmul
+00001669   __aeabi_dsub
+00002373   __aeabi_i2d
+00001dc1   __aeabi_memcpy
+00001dc1   __aeabi_memcpy4
+00001dc1   __aeabi_memcpy8
+000023ed   __aeabi_ui2d
 ffffffff   __binit__
 ffffffff   __c_args__
+000008b3   __cxa_pure_virtual
 20000000   __stack
-000009c5   _args_main
-000008b1   _c_int00
-20000108   _cleanup_ptr
-2000010c   _dtors_ptr
-20000100   _lock
-000009b9   _nop
-000009b3   _register_lock
-000009ad   _register_unlock
-20000104   _unlock
-000008fd   abort
+00002459   _args_main
+000021f1   _c_int00
+20000114   _cleanup_ptr
+20000118   _dtors_ptr
+2000010c   _lock
+0000244d   _nop
+00002447   _register_lock
+00002441   _register_unlock
+20000140   _sys_memory
+20000110   _unlock
+00002285   abort
 ffffffff   binit
-00000865   copy_in
-00000905   exit
+00000c57   calloc
+000021a5   copy_in
+0000228d   exit
+000009a3   free
 00000000   g_pfnVectors
-0000077f   lbed_setup
-00000979   main
-20000110   main_func_sp
-00000621   memcpy
-20000118   msTicks
-000005ab   wait_init
-000005c3   wait_ms
-000005e1   wait_us
+00002017   lbed_setup
+00001b55   main
+2000011c   main_func_sp
+00000941   malloc
+00000b81   memalign
+00001dc1   memcpy
+000008b5   minit
+20000134   msTicks
+00000a6d   realloc
+000019d7   wait_init
+000019ef   wait_ms
+00001a0d   wait_us
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -172,66 +391,202 @@ address    name
 00000000   __TI_static_base__
 00000000   g_pfnVectors
 00000001   __TI_args_main
+00000008   __SYSMEM_SIZE
 00000100   __STACK_SIZE
-0000026d   _ZN9DigitalInC1Ev
-0000026d   _ZN9DigitalInC2Ev
-0000028d   _ZN9DigitalInC1EiPKc
-0000028d   _ZN9DigitalInC2EiPKc
-000002b7   _ZN9DigitalIn5setupEiPKc
-0000041f   _ZN9DigitalIn4readEv
-00000445   _ZN9DigitalIn4modeEi
-000005a1   SysTick_Handler
-000005ab   wait_init
-000005c3   wait_ms
-000005e1   wait_us
-00000621   __aeabi_memcpy
-00000621   __aeabi_memcpy4
-00000621   __aeabi_memcpy8
-00000621   memcpy
-000006bd   __TI_auto_init
-00000751   SystemCoreClockUpdate
-00000761   SystemInit
-0000077f   lbed_setup
-0000080f   _ZN10DigitalOutC1Ev
-0000080f   _ZN10DigitalOutC2Ev
-0000081d   _ZN10DigitalOutC1EiPKc
-0000081d   _ZN10DigitalOutC2EiPKc
-00000839   _ZN10DigitalOut5setupEiPKc
-00000865   copy_in
-000008b1   _c_int00
-000008f9   C$$EXIT
-000008fd   abort
-00000905   exit
-0000093d   _ZN10DigitalOut5writeEi
-00000979   main
-000009ad   _register_unlock
-000009b3   _register_lock
-000009b9   _nop
-000009c5   _args_main
-000009dd   _ZN10DigitalOutaSEi
-000009ef   __TI_zero_init
-00000a01   __TI_decompress_none
-00000a0f   _ZN9DigitalIncviEv
-00000a1b   ResetISR
-00000a27   __TI_decompress_rle24
-00000a44   __TI_Handler_Table_Base
-00000a50   __TI_Handler_Table_Limit
-00000a58   __TI_CINIT_Base
-00000a68   __TI_CINIT_Limit
+0000026d   _ZN5Print11printNumberEmi
+000002d9   _ZN5Print10printFloatEdi
+0000045b   _ZN5Print5printEPKc
+0000046b   _ZN5Print5printEc
+00000483   _ZN5Print5printEii
+00000497   _ZN5Print5printEli
+000004ff   _ZN5Print5printEmi
+00000527   _ZN5Print5printEdi
+00000551   _ZN5Print7printlnEv
+00000585   _ZN5Print7printlnEPKc
+000005ad   _ZN5Print7printlnEc
+000005e5   _ZN5Print6printfEPKcz
+00000871   _ZN5Print5writeEPKci
+000008b3   __cxa_pure_virtual
+000008b5   minit
+00000941   malloc
+000009a3   free
+00000a6d   realloc
+00000b81   memalign
+00000c57   calloc
+00000c95   _ZN6I2cLCDC1Eiii
+00000c95   _ZN6I2cLCDC2Eiii
+00000d69   _ZN6I2cLCD6locateEii
+00000d83   _ZN6I2cLCD3clsEv
+00000da9   _ZN6I2cLCD4rowsEv
+00000db5   _ZN6I2cLCD7columnsEv
+00000dc1   _ZN6I2cLCD7seticonENS_8IconTypeE
+00000de1   _ZN6I2cLCD9cleariconENS_8IconTypeE
+00000e01   _ZN6I2cLCD7puticonEi
+00000ed5   _ZN6I2cLCD5_putcEi
+00000f51   _ZN6I2cLCD5_getcEv
+00000f5f   _ZN6I2cLCD7addressEii
+00000f77   _ZN6I2cLCD9characterEiii
+00000fa5   _ZN6I2cLCD12writeCommandEi
+00000fd3   _ZN6I2cLCD9writeDataEi
+00001009   _ZN9DigitalInC1Ev
+00001009   _ZN9DigitalInC2Ev
+00001029   _ZN9DigitalInC1EiPKc
+00001029   _ZN9DigitalInC2EiPKc
+00001053   _ZN9DigitalIn5setupEiPKc
+000011bb   _ZN9DigitalIn4readEv
+000011e1   _ZN9DigitalIn4modeEi
+000012c9   SysCtlClockGet
+000014a1   _ZN3I2CC1EiiPKc
+000014a1   _ZN3I2CC2EiiPKc
+000014e7   _ZN3I2C4readEiPcib
+00001591   _ZN3I2C4readEi
+000015a1   _ZN3I2C5writeEiPKcib
+0000164b   _ZN3I2C5writeEi
+00001669   __aeabi_dsub
+00001673   __aeabi_dadd
+0000181f   __aeabi_ddiv
+000019cd   SysTick_Handler
+000019d7   wait_init
+000019ef   wait_ms
+00001a0d   wait_us
+00001a59   __aeabi_dmul
+00001b55   main
+00001c37   GPIOPadConfigSet
+00001d01   _ZSt21__gen_dummy_typeinfosv
+00001d09   _ZNSt9type_infoD1Ev
+00001d09   _ZNSt9type_infoD2Ev
+00001d0b   _ZNSt9type_infoD0Ev
+00001d13   _ZNKSt9type_info4nameEv
+00001d17   _ZNKSt9type_infoneERKS_
+00001d2d   _ZNKSt9type_infoeqERKS_
+00001d43   _ZNKSt9type_info6beforeERKS_
+00001d53   _ZN10__cxxabiv129__pointer_to_member_type_infoD1Ev
+00001d53   _ZN10__cxxabiv129__pointer_to_member_type_infoD2Ev
+00001d55   _ZN10__cxxabiv129__pointer_to_member_type_infoD0Ev
+00001d5d   _ZN10__cxxabiv123__fundamental_type_infoD1Ev
+00001d5d   _ZN10__cxxabiv123__fundamental_type_infoD2Ev
+00001d5f   _ZN10__cxxabiv123__fundamental_type_infoD0Ev
+00001d67   _ZN10__cxxabiv121__vmi_class_type_infoD1Ev
+00001d67   _ZN10__cxxabiv121__vmi_class_type_infoD2Ev
+00001d69   _ZN10__cxxabiv121__vmi_class_type_infoD0Ev
+00001d71   _ZN10__cxxabiv120__si_class_type_infoD1Ev
+00001d71   _ZN10__cxxabiv120__si_class_type_infoD2Ev
+00001d73   _ZN10__cxxabiv120__si_class_type_infoD0Ev
+00001d7b   _ZN10__cxxabiv120__function_type_infoD1Ev
+00001d7b   _ZN10__cxxabiv120__function_type_infoD2Ev
+00001d7d   _ZN10__cxxabiv120__function_type_infoD0Ev
+00001d85   _ZN10__cxxabiv119__pointer_type_infoD1Ev
+00001d85   _ZN10__cxxabiv119__pointer_type_infoD2Ev
+00001d87   _ZN10__cxxabiv119__pointer_type_infoD0Ev
+00001d8f   _ZN10__cxxabiv117__pbase_type_infoD1Ev
+00001d8f   _ZN10__cxxabiv117__pbase_type_infoD2Ev
+00001d91   _ZN10__cxxabiv117__pbase_type_infoD0Ev
+00001d99   _ZN10__cxxabiv117__class_type_infoD1Ev
+00001d99   _ZN10__cxxabiv117__class_type_infoD2Ev
+00001d9b   _ZN10__cxxabiv117__class_type_infoD0Ev
+00001da3   _ZN10__cxxabiv117__array_type_infoD1Ev
+00001da3   _ZN10__cxxabiv117__array_type_infoD2Ev
+00001da5   _ZN10__cxxabiv117__array_type_infoD0Ev
+00001dad   _ZN10__cxxabiv116__enum_type_infoD1Ev
+00001dad   _ZN10__cxxabiv116__enum_type_infoD2Ev
+00001daf   _ZN10__cxxabiv116__enum_type_infoD0Ev
+00001dc1   __aeabi_memcpy
+00001dc1   __aeabi_memcpy4
+00001dc1   __aeabi_memcpy8
+00001dc1   memcpy
+00001e5d   __TI_auto_init
+00001ef1   __aeabi_cdcmpeq
+00001ef1   __aeabi_cdcmple
+00001f71   GPIOPinTypeI2CSCL
+00001fe9   SystemCoreClockUpdate
+00001ff9   SystemInit
+00002017   lbed_setup
+000020a9   SysCtlPeripheralEnable
+00002101   _ZN10DigitalOutC1Ev
+00002101   _ZN10DigitalOutC2Ev
+0000210f   _ZN10DigitalOutC1EiPKc
+0000210f   _ZN10DigitalOutC2EiPKc
+0000212b   _ZN10DigitalOut5setupEiPKc
+00002159   I2CMasterInitExpClk
+000021a5   copy_in
+000021f1   _c_int00
+00002239   __aeabi_d2iz
+00002281   C$$EXIT
+00002285   abort
+0000228d   exit
+000022c5   __aeabi_d2uiz
+00002309   _ZN10DigitalOut5writeEi
+00002345   GPIODirModeSet
+00002373   __aeabi_i2d
+000023a1   _ZN5Print5writeEPKc
+000023c7   _ZN5Print6strlenEPKc
+000023ed   __aeabi_ui2d
+0000240d   _ZN6I2cLCD5writeEc
+00002429   _ZN5PrintC1Ev
+00002441   _register_unlock
+00002447   _register_lock
+0000244d   _nop
+00002459   _args_main
+00002471   GPIOPinTypeI2C
+00002483   _ZN10DigitalOutaSEi
+00002495   __TI_zero_init
+000024a7   __TI_decompress_none
+000024b5   _ZN5PrintC2Ev
+000024c1   ResetISR
+000024cd   I2CMasterEnable
+000024d7   I2CMasterBusy
+000024df   I2CMasterSlaveAddrSet
+000024e7   _ZdlPv
+000024ef   __TI_decompress_rle24
+000024f5   I2CMasterControl
+000024f9   I2CMasterDataGet
+000024fd   I2CMasterDataPut
+000025ac   _ZTSN10__cxxabiv123__fundamental_type_infoE
+000025d4   _ZTSN10__cxxabiv120__si_class_type_infoE
+000025fc   _ZTSN10__cxxabiv119__pointer_type_infoE
+00002620   _ZTSN10__cxxabiv117__class_type_infoE
+00002644   _ZTSN10__cxxabiv117__pbase_type_infoE
+00002684   _ZTV6I2cLCD
+0000269c   _ZTIPKe
+000026ac   _ZTV5Print
+000026bc   _ZTVN10__cxxabiv117__class_type_infoE
+000026cc   _ZTVN10__cxxabiv119__pointer_type_infoE
+000026dc   _ZTVN10__cxxabiv120__si_class_type_infoE
+000026ec   _ZTVN10__cxxabiv123__fundamental_type_infoE
+000026fc   _ZTSSt9type_info
+0000270c   _ZTI6I2cLCD
+00002718   _ZTIN10__cxxabiv117__class_type_infoE
+00002724   _ZTIN10__cxxabiv117__pbase_type_infoE
+00002730   _ZTIN10__cxxabiv119__pointer_type_infoE
+0000273c   _ZTIN10__cxxabiv120__si_class_type_infoE
+00002748   _ZTIN10__cxxabiv123__fundamental_type_infoE
+00002754   _ZTI5Print
+0000275c   _ZTISt9type_info
+00002764   _ZTIe
+0000276c   _ZTS6I2cLCD
+00002774   _ZTS5Print
+0000277c   _ZTSPKe
+00002780   _ZTSe
+000027a8   __TI_Handler_Table_Base
+000027b4   __TI_Handler_Table_Limit
+000027c0   __TI_CINIT_Base
+000027d0   __TI_CINIT_Limit
 20000000   __stack
 20000100   __STACK_END
 20000100   __STACK_TOP
-20000100   _lock
-20000104   _unlock
-20000108   _cleanup_ptr
-2000010c   _dtors_ptr
-20000110   main_func_sp
-20000114   SystemCoreClock
-20000118   msTicks
+2000010c   _lock
+20000110   _unlock
+20000114   _cleanup_ptr
+20000118   _dtors_ptr
+2000011c   main_func_sp
+20000120   SystemCoreClock
+20000134   msTicks
+20000138   _ZSt16__dummy_typeinfo
+20000140   _sys_memory
 ffffffff   __binit__
 ffffffff   __c_args__
 ffffffff   binit
 UNDEFED    SHT$$INIT_ARRAY$$Base
 UNDEFED    SHT$$INIT_ARRAY$$Limit
 
-[64 symbols]
+[200 symbols]

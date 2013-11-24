@@ -10,7 +10,7 @@ ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
 "./src/system_LM4F.obj" \
 "./src/startup_ccs.obj" \
-"./src/TestLED.obj" \
+"./src/TestI2cLCD.obj" \
 -l"libc.a" \
 -l"Z:\take\proj\LBED\lbed\CCS_LBED_USERLIB\Debug\CCS_LBED_USERLIB.lib" \
 -l"Z:\take\proj\LBED\lbed\CCS_LBED\Debug\CCS_LBED.lib" \
@@ -130,9 +130,9 @@ CCS_LBED_MAIN.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(TMS470_EXECUTABLE_OUTPUTS__QUOTED) "CCS_LBED_MAIN.out"
-	-$(RM) "src\TestLED.pp" 
+	-$(RM) "src\TestI2cLCD.pp" 
 	-$(RM) "src\startup_ccs.pp" "src\system_LM4F.pp" 
-	-$(RM) "src\TestLED.obj" "src\startup_ccs.obj" "src\system_LM4F.obj" 
+	-$(RM) "src\TestI2cLCD.obj" "src\startup_ccs.obj" "src\system_LM4F.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

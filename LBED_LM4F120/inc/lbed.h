@@ -10,5 +10,6 @@
 #include "I2C.h"
 #include "AnalogIn.h"
 #include "PwmOut.h"
+#include "SPI.h"
 
 #endif

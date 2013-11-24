@@ -1,4 +1,5 @@
-src/TestTone.d: ../src/TestTone.cpp \
+src/MARMEX_OB_oled.d: ../src/MARMEX_OB_oled.cpp \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/MARMEX_OB_oled.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalOut.h \
@@ -21,7 +22,9 @@ src/TestTone.d: ../src/TestTone.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h \
- /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/Tone.h
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/MARMEX_OB_oled.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/lbed.h:
 
@@ -67,4 +70,4 @@ src/TestTone.d: ../src/TestTone.cpp \
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h:
 
-/Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/Tone.h:
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h:

@@ -7,6 +7,7 @@ SHELL = cmd.exe
 CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/tms470_4.9.5
 
 ORDERED_OBJS += \
+"./src/Tone.obj" \
 "./src/TextLCD.obj" \
 "./src/LM73.obj" \
 "./src/I2cLCD.obj" \
@@ -121,8 +122,8 @@ CCS_LBED_USERLIB.lib: $(OBJS)
 # Other Targets
 clean:
 	-$(RM) $(TMS470_LIBRARY_OUTPUTS__QUOTED) "CCS_LBED_USERLIB.lib"
-	-$(RM) "src\I2cLCD.pp" "src\LM73.pp" "src\TextLCD.pp" 
-	-$(RM) "src\I2cLCD.obj" "src\LM73.obj" "src\TextLCD.obj" 
+	-$(RM) "src\I2cLCD.pp" "src\LM73.pp" "src\TextLCD.pp" "src\Tone.pp" 
+	-$(RM) "src\I2cLCD.obj" "src\LM73.obj" "src\TextLCD.obj" "src\Tone.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

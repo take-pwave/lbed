@@ -4,5 +4,5 @@
 
 USER_OBJS :=
 
-LIBS := -lLBED_LM4F120_USERLIB -lgcc -lLBED_LM4F120 -lStelarisWare -lCMSISv2p00_LM4F120 -lc
+LIBS := -lLBED_LM4F120_USERLIB -lm -lgcc -lLBED_LM4F120 -lStelarisWare -lCMSISv2p00_LM4F120 -lc
 

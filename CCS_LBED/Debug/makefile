@@ -10,6 +10,7 @@ ORDERED_OBJS += \
 "./src/wait_api.obj" \
 "./src/pure_virtual.obj" \
 "./src/Serial.obj" \
+"./src/PwmOut.obj" \
 "./src/Print.obj" \
 "./src/I2C.obj" \
 "./src/DigitalOut.obj" \
@@ -126,9 +127,9 @@ CCS_LBED.lib: $(OBJS)
 # Other Targets
 clean:
 	-$(RM) $(TMS470_LIBRARY_OUTPUTS__QUOTED) "CCS_LBED.lib"
-	-$(RM) "src\BusOut.pp" "src\DigitalIn.pp" "src\DigitalOut.pp" "src\I2C.pp" "src\Print.pp" "src\Serial.pp" "src\pure_virtual.pp" 
+	-$(RM) "src\BusOut.pp" "src\DigitalIn.pp" "src\DigitalOut.pp" "src\I2C.pp" "src\Print.pp" "src\PwmOut.pp" "src\Serial.pp" "src\pure_virtual.pp" 
 	-$(RM) "src\wait_api.pp" 
-	-$(RM) "src\BusOut.obj" "src\DigitalIn.obj" "src\DigitalOut.obj" "src\I2C.obj" "src\Print.obj" "src\Serial.obj" "src\pure_virtual.obj" "src\wait_api.obj" 
+	-$(RM) "src\BusOut.obj" "src\DigitalIn.obj" "src\DigitalOut.obj" "src\I2C.obj" "src\Print.obj" "src\PwmOut.obj" "src\Serial.obj" "src\pure_virtual.obj" "src\wait_api.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

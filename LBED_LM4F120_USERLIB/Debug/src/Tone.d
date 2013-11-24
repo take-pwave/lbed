@@ -21,7 +21,8 @@ src/Tone.d: ../src/Tone.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/I2C.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h \
- /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/Tone.h:
 
@@ -68,3 +69,5 @@ src/Tone.d: ../src/Tone.cpp \
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h:

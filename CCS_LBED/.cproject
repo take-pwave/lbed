@@ -47,6 +47,7 @@
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compilerID.LITTLE_ENDIAN.292222547" name="Little endian code (--little_endian, -me)" superClass="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compilerID.LITTLE_ENDIAN" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compilerID.DEFINE.1805903146" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compilerID.DEFINE" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__FPU_PRESENT=1"/>
+									<listOptionValue builtIn="false" value="PART_LM4F120H5QR"/>
 								</option>
 								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compiler.inputType__C_SRCS.2027840805" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compiler.inputType__C_SRCS"/>
 								<inputType id="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compiler.inputType__CPP_SRCS.1943047264" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.TMS470_4.9.compiler.inputType__CPP_SRCS"/>

@@ -11,6 +11,7 @@ CPP_SRCS += \
 ../src/libmbed/I2C.cpp \
 ../src/libmbed/Print.cpp \
 ../src/libmbed/PwmOut.cpp \
+../src/libmbed/SPI.cpp \
 ../src/libmbed/Serial.cpp \
 ../src/libmbed/pure_virtual.cpp 
 
@@ -25,6 +26,7 @@ OBJS += \
 ./src/libmbed/I2C.o \
 ./src/libmbed/Print.o \
 ./src/libmbed/PwmOut.o \
+./src/libmbed/SPI.o \
 ./src/libmbed/Serial.o \
 ./src/libmbed/pure_virtual.o \
 ./src/libmbed/wait_api.o 
@@ -40,6 +42,7 @@ CPP_DEPS += \
 ./src/libmbed/I2C.d \
 ./src/libmbed/Print.d \
 ./src/libmbed/PwmOut.d \
+./src/libmbed/SPI.d \
 ./src/libmbed/Serial.d \
 ./src/libmbed/pure_virtual.d 
 

@@ -19,7 +19,10 @@ src/I2cLCD.d: ../src/I2cLCD.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Stream.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Print.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/I2C.h \
- /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/I2cLCD.h:
 
@@ -62,3 +65,9 @@ src/I2cLCD.d: ../src/I2cLCD.cpp \
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/I2C.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h:

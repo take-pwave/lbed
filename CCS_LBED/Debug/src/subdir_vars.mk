@@ -9,6 +9,7 @@ CPP_SRCS += \
 ../src/DigitalOut.cpp \
 ../src/I2C.cpp \
 ../src/Print.cpp \
+../src/PwmOut.cpp \
 ../src/Serial.cpp \
 ../src/pure_virtual.cpp 
 
@@ -21,6 +22,7 @@ OBJS += \
 ./src/DigitalOut.obj \
 ./src/I2C.obj \
 ./src/Print.obj \
+./src/PwmOut.obj \
 ./src/Serial.obj \
 ./src/pure_virtual.obj \
 ./src/wait_api.obj 
@@ -31,6 +33,7 @@ CPP_DEPS += \
 ./src/DigitalOut.pp \
 ./src/I2C.pp \
 ./src/Print.pp \
+./src/PwmOut.pp \
 ./src/Serial.pp \
 ./src/pure_virtual.pp 
 
@@ -43,6 +46,7 @@ CPP_DEPS__QUOTED += \
 "src\DigitalOut.pp" \
 "src\I2C.pp" \
 "src\Print.pp" \
+"src\PwmOut.pp" \
 "src\Serial.pp" \
 "src\pure_virtual.pp" 
 
@@ -55,6 +59,7 @@ OBJS__QUOTED += \
 "src\DigitalOut.obj" \
 "src\I2C.obj" \
 "src\Print.obj" \
+"src\PwmOut.obj" \
 "src\Serial.obj" \
 "src\pure_virtual.obj" \
 "src\wait_api.obj" 
@@ -65,6 +70,7 @@ CPP_SRCS__QUOTED += \
 "../src/DigitalOut.cpp" \
 "../src/I2C.cpp" \
 "../src/Print.cpp" \
+"../src/PwmOut.cpp" \
 "../src/Serial.cpp" \
 "../src/pure_virtual.cpp" 
 

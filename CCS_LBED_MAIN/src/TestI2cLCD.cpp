@@ -20,10 +20,12 @@
 int main() {
 	lbed_setup();
 
-	I2cLCD lcd(SDA, SCL, J2_10); //sda scl reset
+	I2cLCD lcd(J4_3, J2_2, J2_10); //sda scl reset
 
     // print TEXT
-    lcd.printf("Dsp test");
+	// printfのva_argsの処理が変！
+	lcd.print("Dsp test");
+    // lcd.printf("Dsp test");
     lcd.locate(0, 1);
     lcd.print("Hello World!");
     // print ICON

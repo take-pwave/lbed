@@ -9,5 +9,6 @@ extern "C" void lbed_setup();
 #include "print.h"
 #include "Serial.h"
 #include "I2C.h"
+#include "PwmOut.h"
 
 #endif

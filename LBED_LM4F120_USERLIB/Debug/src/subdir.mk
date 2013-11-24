@@ -6,18 +6,21 @@
 CPP_SRCS += \
 ../src/I2cLCD.cpp \
 ../src/LM73.cpp \
+../src/MARMEX_OB_oled.cpp \
 ../src/TextLCD.cpp \
 ../src/Tone.cpp 
 
 OBJS += \
 ./src/I2cLCD.o \
 ./src/LM73.o \
+./src/MARMEX_OB_oled.o \
 ./src/TextLCD.o \
 ./src/Tone.o 
 
 CPP_DEPS += \
 ./src/I2cLCD.d \
 ./src/LM73.d \
+./src/MARMEX_OB_oled.d \
 ./src/TextLCD.d \
 ./src/Tone.d 
 
