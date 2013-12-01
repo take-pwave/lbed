@@ -27,6 +27,11 @@ void wait_us(int us) {
 	while (i-- > 0)
 		continue;
 }
+
+unsigned long	millis() {
+	return msTicks;
+}
+
 // doubleからfloatへのキャストでハードエラーになるので、外した
 #if 0
 void wait(double s) {

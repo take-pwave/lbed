@@ -1,4 +1,5 @@
-src/TestOLED.d: ../src/TestOLED.cpp \
+src/Keypad/Keypad.d: ../src/Keypad/Keypad.cpp \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/Keypad.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/DigitalOut.h \
@@ -22,7 +23,9 @@ src/TestOLED.d: ../src/TestOLED.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h \
- /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/MARMEX_OB_oled.h
+ /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/utility/Key.h
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/Keypad.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/lbed.h:
 
@@ -70,4 +73,4 @@ src/TestOLED.d: ../src/TestOLED.cpp \
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h:
 
-/Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/MARMEX_OB_oled.h:
+/Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/utility/Key.h:

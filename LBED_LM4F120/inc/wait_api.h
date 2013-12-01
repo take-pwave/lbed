@@ -27,6 +27,9 @@ void wait_init(void);
 // doubleからfloatへのキャストでハードエラーになるので、外した
 //void wait(double s);
 
+// Arduino関数
+unsigned long millis();
+
 #ifdef __cplusplus
 }
 #endif
