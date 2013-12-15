@@ -13,9 +13,11 @@ CPP_SRCS += \
 ../src/libmbed/PwmOut.cpp \
 ../src/libmbed/SPI.cpp \
 ../src/libmbed/Serial.cpp \
+../src/libmbed/Ticker.cpp \
 ../src/libmbed/pure_virtual.cpp 
 
 C_SRCS += \
+../src/libmbed/LM4F_handler.c \
 ../src/libmbed/wait_api.c 
 
 OBJS += \
@@ -24,14 +26,17 @@ OBJS += \
 ./src/libmbed/DigitalIn.o \
 ./src/libmbed/DigitalOut.o \
 ./src/libmbed/I2C.o \
+./src/libmbed/LM4F_handler.o \
 ./src/libmbed/Print.o \
 ./src/libmbed/PwmOut.o \
 ./src/libmbed/SPI.o \
 ./src/libmbed/Serial.o \
+./src/libmbed/Ticker.o \
 ./src/libmbed/pure_virtual.o \
 ./src/libmbed/wait_api.o 
 
 C_DEPS += \
+./src/libmbed/LM4F_handler.d \
 ./src/libmbed/wait_api.d 
 
 CPP_DEPS += \
@@ -44,6 +49,7 @@ CPP_DEPS += \
 ./src/libmbed/PwmOut.d \
 ./src/libmbed/SPI.d \
 ./src/libmbed/Serial.d \
+./src/libmbed/Ticker.d \
 ./src/libmbed/pure_virtual.d 
 
 

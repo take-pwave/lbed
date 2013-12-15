@@ -23,6 +23,7 @@ src/Keypad/Keypad.d: ../src/Keypad/Keypad.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Ticker.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/utility/Key.h
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/Keypad.h:
@@ -72,5 +73,7 @@ src/Keypad/Keypad.d: ../src/Keypad/Keypad.cpp \
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Ticker.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/utility/Key.h:

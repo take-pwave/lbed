@@ -1,6 +1,6 @@
 
-#ifndef LPC_BUSOUT_H
-#define LPC_BUSOUT_H
+#ifndef LBED_BUSOUT_H
+#define LBED_BUSOUT_H
 
 #include <DigitalOut.h>
 

@@ -1,5 +1,5 @@
-#ifndef MBED_PLATFORM_H
-#define MBED_PLATFORM_H
+#ifndef LBED_PLATFORM_H
+#define LBED_PLATFORM_H
 
 //#define MBED_RPC
 #define MBED_OPERATORS

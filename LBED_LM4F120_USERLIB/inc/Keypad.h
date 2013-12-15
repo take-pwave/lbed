@@ -125,10 +125,10 @@ public:
 private:
 	unsigned long startTime;
 	char *keymap;
-	DigitalOut		rowPins[4];
-	DigitalOut		columnPins[4];
     //byte *rowPins;
     //byte *columnPins;
+	DigitalOut		rowPins[4];
+	DigitalOut		columnPins[4];
 	KeypadSize sizeKpd;
 	uint debounceTime;
 	uint holdTime;

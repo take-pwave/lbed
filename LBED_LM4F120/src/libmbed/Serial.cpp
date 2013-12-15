@@ -64,5 +64,5 @@ int Serial::read() {
 }
 
 int Serial::available() {
-	return _available ? 1 : 0;
+	return UARTCharsAvail(UART0_BASE);
 }

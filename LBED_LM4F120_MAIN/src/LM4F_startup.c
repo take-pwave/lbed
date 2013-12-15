@@ -58,6 +58,7 @@ void empty_def_handler(void);
 void hardfault_handler(void);
 
 extern void SysTick_Handler(void);
+extern void Timer0AIntHandler(void);
 
 //-----------------------------------------------------------------------------
 // 						     Variables declarations
@@ -122,7 +123,7 @@ void(* myvectors[])(void) = {
 	empty_def_handler,		// ADC 0 Seq 2						32
 	empty_def_handler,		// ADC 0 Seq 3						33
 	empty_def_handler,		// WDT 0 and 1						34
-	empty_def_handler,		// 16/32 bit timer 0 A				35
+	Timer0AIntHandler,		// 16/32 bit timer 0 A				35
 	empty_def_handler,		// 16/32 bit timer 0 B				36
 	empty_def_handler,		// 16/32 bit timer 1 A				37
 	empty_def_handler,		// 16/32 bit timer 1 B				38

@@ -1,5 +1,5 @@
-#ifndef MY_SERIAL_H
-#define MY_SERIAL_H
+#ifndef LBED_SERIAL_H
+#define LBED_SERIAL_H
 
 #include "platform.h"
 #include "Stream.h"

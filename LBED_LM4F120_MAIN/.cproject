@@ -90,12 +90,12 @@
 								<option id="com.crt.advproject.link.cpp.hdrlib.1593491072" name="Use C library" superClass="com.crt.advproject.link.cpp.hdrlib" value="com.crt.advproject.cpp.link.hdrlib.newlib.none" valueType="enumerated"/>
 								<option id="gnu.cpp.link.option.libs.225123596" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="LBED_LM4F120_USERLIB"/>
-									<listOptionValue builtIn="false" value="m"/>
-									<listOptionValue builtIn="false" value="gcc"/>
 									<listOptionValue builtIn="false" value="LBED_LM4F120"/>
 									<listOptionValue builtIn="false" value="StelarisWare"/>
 									<listOptionValue builtIn="false" value="CMSISv2p00_LM4F120"/>
 									<listOptionValue builtIn="false" value="c"/>
+									<listOptionValue builtIn="false" value="m"/>
+									<listOptionValue builtIn="false" value="gcc"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.1756115890" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_LM4F120_USERLIB/Debug}&quot;"/>

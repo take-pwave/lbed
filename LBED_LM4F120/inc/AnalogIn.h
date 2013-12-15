@@ -1,5 +1,5 @@
-#ifndef MBED_ANALOGIN_H
-#define MBED_ANALOGIN_H
+#ifndef LBED_ANALOGIN_H
+#define LBED_ANALOGIN_H
 
 #include "platform.h"
 #include "PinNames.h"

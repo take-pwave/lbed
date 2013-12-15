@@ -1,5 +1,5 @@
-#ifndef MY_PRINT_H
-#define MY_PRINT_H
+#ifndef LBED_PRINT_H
+#define LBED_PRINT_H
 
 // #include <string.h>
 // Arduinoのprint.hから最低限の機能を取り込む

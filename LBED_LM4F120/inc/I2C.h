@@ -1,5 +1,5 @@
-#ifndef MY_I2C_H
-#define MY_I2C_H
+#ifndef LBED_I2C_H
+#define LBED_I2C_H
 
 #include <PinNames.h>
 #include "I2C.h"

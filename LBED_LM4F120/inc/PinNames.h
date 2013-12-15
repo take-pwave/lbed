@@ -1,13 +1,5 @@
-/* mbed Microcontroller Library - PinNames
- * Copyright (C) 2008-2009 ARM Limited. All rights reserved.
- *
- * Provides the mapping of mbed DIP and LPC Pin Names
- * This is an LPC1768/LPC2368 specific implementation
- * sford
- */
-
-#ifndef MBED_PINNAMES_H
-#define MBED_PINNAMES_H
+#ifndef LBED_PINNAMES_H
+#define LBED_PINNAMES_H
 
 #ifdef __cplusplus
 extern "C" {

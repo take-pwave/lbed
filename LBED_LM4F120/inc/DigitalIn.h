@@ -1,5 +1,5 @@
-#ifndef MBED_DIGITALIN_H
-#define MBED_DIGITALIN_H
+#ifndef LBED_DIGITALIN_H
+#define LBED_DIGITALIN_H
 
 #include "platform.h"
 #include "PinNames.h"

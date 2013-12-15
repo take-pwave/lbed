@@ -1,6 +1,6 @@
  
-#ifndef MBED_WAIT_API_H
-#define MBED_WAIT_API_H
+#ifndef LBED_WAIT_API_H
+#define LBED_WAIT_API_H
 
 #ifdef __cplusplus
 extern "C" {

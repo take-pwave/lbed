@@ -22,7 +22,8 @@ src/MARMEX_OB_oled.d: ../src/MARMEX_OB_oled.cpp \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PinNames.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/AnalogIn.h \
  /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h \
- /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h \
+ /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Ticker.h
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120_USERLIB/inc/MARMEX_OB_oled.h:
 
@@ -71,3 +72,5 @@ src/MARMEX_OB_oled.d: ../src/MARMEX_OB_oled.cpp \
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/PwmOut.h:
 
 /Users/take/proj/LBED/lbed/LBED_LM4F120/inc/SPI.h:
+
+/Users/take/proj/LBED/lbed/LBED_LM4F120/inc/Ticker.h:

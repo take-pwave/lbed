@@ -11,5 +11,6 @@
 #include "AnalogIn.h"
 #include "PwmOut.h"
 #include "SPI.h"
+#include "Ticker.h"
 
 #endif

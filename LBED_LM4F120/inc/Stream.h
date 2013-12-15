@@ -1,5 +1,5 @@
-#ifndef MY_STREAM_H
-#define MY_STREAM_H
+#ifndef LBED_STREAM_H
+#define LBED_STREAM_H
 
 #include "Print.h"
 

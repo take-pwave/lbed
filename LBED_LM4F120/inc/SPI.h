@@ -1,5 +1,5 @@
-#ifndef MBED_SPI_H
-#define MBED_SPI_H
+#ifndef LBED_SPI_H
+#define LBED_SPI_H
 
 #include <PinNames.h>
 
