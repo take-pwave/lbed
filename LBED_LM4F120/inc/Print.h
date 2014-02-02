@@ -12,13 +12,6 @@
 class Print
 {
 	private:
-	int strlen(const char  *s) {
-		int len = 0;
-		while(*s++)
-			len++;
-		return (len);
-	}
-
 	int printNumber(unsigned long, int);
 	int printFloat(double number, int digits);
 	public:
@@ -50,5 +43,12 @@ class Print
 	protected:
     virtual int write(const char c) = 0;	// ここでは未定義、必ず上位クラスで定義すること
     virtual int write(const char *s, int size);
+
+	int strlen(const char  *s) {
+		int len = 0;
+		while(*s++)
+			len++;
+		return (len);
+	}
 };
 #endif
