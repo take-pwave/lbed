@@ -37,7 +37,7 @@ void RTC8664::set_alarm(
 )
 {
 	command(ALARM_MINITE,	m); // 分
-	command(ALARM_MINITE,	h); // 時
+	command(ALARM_HOUR,		h); // 時
 	command(ALARM_DAY,		0x80); // 比較対象外
 	command(ALARM_WEEK,		0x80); // 比較対象外
 	command(CTRL2,			AIE_BIT);	// アラーム割り込み可能にする
