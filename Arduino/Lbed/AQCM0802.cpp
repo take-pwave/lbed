@@ -13,28 +13,28 @@
 #define CNTR_DEF    0x20
 
 AQCM0802::AQCM0802(PinName sda, PinName scl) :  _i2c(sda , scl) {
-	//AQCM0802::setup();
+    // setup();
 }
 
 void AQCM0802::setup() {
     contrast = CNTR_DEF;
-
+    
     wait_ms(40);
-
+    
     writeCommand(FUNC_SET1);
     writeCommand(FUNC_SET2);
     writeCommand(INT_OSC);
-
+    
     writeCommand(0x70 | (contrast & 0xF));
     writeCommand(0x5C | ((contrast >> 4) & 0x3));
-
+    
     writeCommand(0x6C);
     wait_ms(300); //wait(0.3);
-
+    
     writeCommand(0x38); // function set
     writeCommand(0x0C); // Display On
-
-    cls(); // Clear Display
+    
+    cls(); // Clear Display    
 }
 
 void AQCM0802::character(int column, int row, int c) {

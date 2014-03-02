@@ -34,7 +34,7 @@ class Print
     int println(const char *s);
     int println(char c);
 
-#if 0
+#if 1
     void printf (
     	const char*	str,	// Pointer to the format string
     	...					// Optional arguments

@@ -53,5 +53,7 @@ int I2C::read(int address, char *data, int length, bool repeated)
 	I2CMasterTXBuffer[0] = *data;
 	unsigned char addr = (unsigned char)address>>1;
 	I2C_MstSendRcv( LPC_I2C, address, (uint8_t *)I2CMasterTXBuffer, 1, (uint8_t *)I2CMasterRXBuffer, length );
+	for (int i = 0; i < length; i++)
+		data[i] = I2CMasterRXBuffer[i];
     return length;
 }

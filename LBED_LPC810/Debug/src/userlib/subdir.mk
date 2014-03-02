@@ -4,13 +4,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/userlib/AQCM0802.cpp 
+../src/userlib/AQCM0802.cpp \
+../src/userlib/RTC8664.cpp 
 
 OBJS += \
-./src/userlib/AQCM0802.o 
+./src/userlib/AQCM0802.o \
+./src/userlib/RTC8664.o 
 
 CPP_DEPS += \
-./src/userlib/AQCM0802.d 
+./src/userlib/AQCM0802.d \
+./src/userlib/RTC8664.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -1,13 +1,13 @@
 
-#ifndef LBED_AQCM0802_H
-#define LBED_AQCM0802_H
+#ifndef MBED_I2CLCD_H
+#define MBED_I2CLCD_H
 
 #include "lbed.h"
 
 class AQCM0802 : public Print {
 public:
 	AQCM0802(PinName sda, PinName scl);
-	void setup();
+    void setup();
 #if DOXYGEN_ONLY
     int putc(int c);
     int printf(const char* format, ...);
@@ -21,7 +21,7 @@ protected:
     virtual int _putc(int value);
     virtual int _getc();
     // 追加 Takemoto
-	virtual int write(const char c) {
+	virtual size_t write(uint8_t c) {
 		_putc(c);
 		return 1;
 	}

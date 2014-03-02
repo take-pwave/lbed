@@ -4,7 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/I2cLCD.cpp \
+../src/RealTimeClock.cpp \
 ../src/cr_cpp_config.cpp \
 ../src/cr_startup_lpc8xx.cpp 
 
@@ -13,7 +13,7 @@ C_SRCS += \
 ../src/mtb.c 
 
 OBJS += \
-./src/I2cLCD.o \
+./src/RealTimeClock.o \
 ./src/cr_cpp_config.o \
 ./src/cr_startup_lpc8xx.o \
 ./src/crp.o \
@@ -24,7 +24,7 @@ C_DEPS += \
 ./src/mtb.d 
 
 CPP_DEPS += \
-./src/I2cLCD.d \
+./src/RealTimeClock.d \
 ./src/cr_cpp_config.d \
 ./src/cr_startup_lpc8xx.d 
 
