@@ -20,7 +20,7 @@ void wait_ms(int ms) {
 }
 
 void wait_us(int us) {
-	volatile long i = 8*us;	// ビジーウェイト用の仮の値
+	volatile long i = 2*us;	// ビジーウェイト用の仮の値
 	while (i-- > 0)
 		continue;
 }
