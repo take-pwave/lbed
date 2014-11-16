@@ -5,15 +5,21 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/userlib/AQCM0802.cpp \
-../src/userlib/RTC8664.cpp 
+../src/userlib/LM73.cpp \
+../src/userlib/RTC8664.cpp \
+../src/userlib/SoftSerialTxOnly.cpp 
 
 OBJS += \
 ./src/userlib/AQCM0802.o \
-./src/userlib/RTC8664.o 
+./src/userlib/LM73.o \
+./src/userlib/RTC8664.o \
+./src/userlib/SoftSerialTxOnly.o 
 
 CPP_DEPS += \
 ./src/userlib/AQCM0802.d \
-./src/userlib/RTC8664.d 
+./src/userlib/LM73.d \
+./src/userlib/RTC8664.d \
+./src/userlib/SoftSerialTxOnly.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

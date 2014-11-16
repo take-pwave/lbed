@@ -9,7 +9,9 @@ src/SoftSerialTx.d: ../src/SoftSerialTx.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC810/inc/DigitalIn.h \
  /Users/take/proj/LBED/lbed/LBED_LPC810/inc/I2C.h \
  /Users/take/proj/LBED/lbed/LBED_LPC810/inc/wait_api.h \
- /Users/take/proj/LBED/lbed/LBED_LPC810/inc/Print.h
+ /Users/take/proj/LBED/lbed/LBED_LPC810/inc/Print.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC810/src/userlib/SoftSerialTxOnly.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC810/src/userlib/LM73.h
 
 /Users/take/Documents/LPCXpresso_6.0.2/workspace/CMSIS_CORE_LPC8xx/inc/LPC8xx.h:
 
@@ -32,3 +34,7 @@ src/SoftSerialTx.d: ../src/SoftSerialTx.cpp \
 /Users/take/proj/LBED/lbed/LBED_LPC810/inc/wait_api.h:
 
 /Users/take/proj/LBED/lbed/LBED_LPC810/inc/Print.h:
+
+/Users/take/proj/LBED/lbed/LBED_LPC810/src/userlib/SoftSerialTxOnly.h:
+
+/Users/take/proj/LBED/lbed/LBED_LPC810/src/userlib/LM73.h:
