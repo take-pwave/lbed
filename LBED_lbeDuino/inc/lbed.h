@@ -1,0 +1,13 @@
+#include "lpcdevice.h"
+
+#include "PinNames.h"
+#include "AnalogIn.h"
+#include "DigitalIn.h"
+#include "DigitalOut.h"
+#include "BusOut.h"
+#include "wait_api.h"
+#include "Print.h"
+#include "Serial.h"
+#include "I2C.h"
+#include "SPI.h"
+#include "PwmOut.h"

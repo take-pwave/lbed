@@ -1,0 +1,4 @@
+src_base/cr_startup_lpc11.d: ../src_base/cr_startup_lpc11.cpp \
+ /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/system_LPC11xx.h
+
+/Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/system_LPC11xx.h:
