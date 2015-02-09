@@ -101,10 +101,9 @@ protected:
 
     LPC_SSP_TypeDef *_spi;
     uint8_t src_addr[SSP_BUFSIZE];
-    uint8_t dest_addr[SSP_BUFSIZE];
+    uint8_t dst_addr[SSP_BUFSIZE];
 
 private:
-
 };
 
 //} // namespace mbed

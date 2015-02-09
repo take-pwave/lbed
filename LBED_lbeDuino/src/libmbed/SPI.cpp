@@ -25,7 +25,7 @@ SPI::SPI(PinName mosi, PinName miso, PinName sclk, const char *name) :
 		// バッファの初期化（例題に習った）
 		for (int i = 0; i < SSP_BUFSIZE; i++) {
 			src_addr[i] = 0;
-			dest_addr[i] = 0;
+			dst_addr[i] = 0;
 		}
 	}
 }
@@ -80,4 +80,3 @@ int SPI::write(int value) {
 	}
     return SSP_Send(SSP_NUM, src_addr, len);
 }
-

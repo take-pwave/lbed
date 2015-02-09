@@ -34,13 +34,14 @@
 								<option id="gnu.cpp.compiler.option.other.other.1751617916" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1014952539" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/CMSISv2p00_LPC11xx/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_lbeDuino_USERLIB/src/SD}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_lbeDuino/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_lbeDuino/src/Common/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/Common/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LBED_lbeDuino_USERLIB/inc}&quot;"/>
 								</option>
-								<option id="com.crt.advproject.cpp.exe.debug.option.optimization.level.2105907103" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="com.crt.advproject.cpp.exe.debug.option.optimization.level.2105907103" name="Optimization Level" superClass="com.crt.advproject.cpp.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.size" valueType="enumerated"/>
 								<option id="com.crt.advproject.cpp.exe.debug.option.debugging.level.1845532264" name="Debug Level" superClass="com.crt.advproject.cpp.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.default" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.cpp.input.1634903765" superClass="com.crt.advproject.compiler.cpp.input"/>
 							</tool>
@@ -215,25 +216,25 @@
 &lt;memoryInstance derived_from="Flash" id="MFlash32" location="0x0" size="0x8000"/&gt;
 &lt;memoryInstance derived_from="RAM" id="RamLoc4" location="0x10000000" size="0x1000"/&gt;
 &lt;prog_flash blocksz="0x1000" location="0x0" maxprgbuff="0x400" progwithcode="TRUE" size="0x8000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_SYSCTL" determined="infoFile" id="SYSCTL" location="0x40048000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_PMU" determined="infoFile" id="PMU" location="0x40038000"/&gt;
-&lt;peripheralInstance derived_from="CM0_NVIC" determined="infoFile" id="NVIC" location="0xe000e000"/&gt;
-&lt;peripheralInstance derived_from="CM0_DCR" determined="infoFile" id="DCR" location="0xe000edf0"/&gt;
-&lt;peripheralInstance derived_from="LPC11_GPIO" determined="infoFile" id="GPIO0" location="0x50000000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_GPIO" determined="infoFile" id="GPIO1" location="0x50010000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_GPIO" determined="infoFile" id="GPIO2" location="0x50020000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_GPIO" determined="infoFile" id="GPIO3" location="0x50030000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_IOCON" determined="infoFile" id="IOCON" location="0x40044000"/&gt;
-&lt;peripheralInstance derived_from="LPC11U_FMC" determined="infoFile" id="FMC" location="0x4003c000"/&gt;
-&lt;peripheralInstance derived_from="LPC1xxx_UART_MODEM" determined="infoFile" id="UART0" location="0x40008000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_I2C" determined="infoFile" id="I2C0" location="0x40000000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_SSP" determined="infoFile" id="SSP0" location="0x40040000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_TIMER16" determined="infoFile" id="TMR160" location="0x4000c000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_TIMER16" determined="infoFile" id="TMR161" location="0x40010000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_TIMER32" determined="infoFile" id="TIMER0" location="0x40014000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_TIMER32" determined="infoFile" id="TIMER1" location="0x40018000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_WDT" determined="infoFile" id="WDT" location="0x40004000"/&gt;
-&lt;peripheralInstance derived_from="LPC11_13_ADC" determined="infoFile" id="ADC" location="0x4001c000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_SYSCTL" id="SYSCTL" location="0x40048000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_PMU" id="PMU" location="0x40038000"/&gt;
+&lt;peripheralInstance derived_from="CM0_NVIC" id="NVIC" location="0xe000e000"/&gt;
+&lt;peripheralInstance derived_from="CM0_DCR" id="DCR" location="0xe000edf0"/&gt;
+&lt;peripheralInstance derived_from="LPC11_GPIO" id="GPIO0" location="0x50000000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_GPIO" id="GPIO1" location="0x50010000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_GPIO" id="GPIO2" location="0x50020000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_GPIO" id="GPIO3" location="0x50030000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_IOCON" id="IOCON" location="0x40044000"/&gt;
+&lt;peripheralInstance derived_from="LPC11U_FMC" id="FMC" location="0x4003c000"/&gt;
+&lt;peripheralInstance derived_from="LPC1xxx_UART_MODEM" id="UART0" location="0x40008000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_I2C" id="I2C0" location="0x40000000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_SSP" id="SSP0" location="0x40040000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_TIMER16" id="TMR160" location="0x4000c000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_TIMER16" id="TMR161" location="0x40010000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_TIMER32" id="TIMER0" location="0x40014000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_TIMER32" id="TIMER1" location="0x40018000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_WDT" id="WDT" location="0x40004000"/&gt;
+&lt;peripheralInstance derived_from="LPC11_13_ADC" id="ADC" location="0x4001c000"/&gt;
 &lt;/chip&gt;
 &lt;processor&gt;&lt;name gcc_name="cortex-m0"&gt;Cortex-M0&lt;/name&gt;
 &lt;family&gt;Cortex-M&lt;/family&gt;
@@ -243,7 +244,14 @@
 &lt;/infoList&gt;
 &lt;/TargetConfig&gt;</projectStorage>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/LBED_lbeDuino_MAIN"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/LBED_lbeDuino_MAIN"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<profile id="com.crt.advproject.GCCManagedMakePerProjectProfileCPP">

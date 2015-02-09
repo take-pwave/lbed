@@ -87,10 +87,10 @@ enum e_PinName {
       , D7 = P0_3
       , D8 = P0_5
       , D9 = P0_4
-      , D10 = P0_6
+      , D10 = P0_7
       , D11 = P0_9
       , D12 = P0_8
-      , D13 = P0_7
+      , D13 = P0_6
 
     // Other mbed Pin Names
       , LED1 = P0_10

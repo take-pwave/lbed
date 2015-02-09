@@ -356,6 +356,7 @@ void PendSV_Handler(void)
     {
     }
 }
+/*
 __attribute__ ((section(".after_vectors")))
 void SysTick_Handler(void)
 {
@@ -363,7 +364,7 @@ void SysTick_Handler(void)
     {
     }
 }
-
+*/
 //*****************************************************************************
 //
 // Processor ends up here if an unexpected interrupt occurs or a specific

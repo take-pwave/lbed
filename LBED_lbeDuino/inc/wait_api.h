@@ -24,6 +24,9 @@ void wait_us(int us);
 
 void wait_init(void);
 
+// Arduino関数
+unsigned long millis();
+
 #ifdef __cplusplus
 }
 #endif
