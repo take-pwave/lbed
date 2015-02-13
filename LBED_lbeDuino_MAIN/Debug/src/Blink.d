@@ -1,4 +1,4 @@
-src/SDCard_logger.d: ../src/SDCard_logger.cpp \
+src/Blink.d: ../src/Blink.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
@@ -25,13 +25,7 @@ src/SDCard_logger.d: ../src/SDCard_logger.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_gpio.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/SD.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/SdFat.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/Sd2Card.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/SdInfo.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/FatStructs.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/SdFatUtil.h
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h:
 
@@ -86,15 +80,3 @@ src/SDCard_logger.d: ../src/SDCard_logger.cpp \
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h:
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/SD.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/SdFat.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/Sd2Card.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/SdInfo.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/FatStructs.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/src/SD/utility/SdFatUtil.h:

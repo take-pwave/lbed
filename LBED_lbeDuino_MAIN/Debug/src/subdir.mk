@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/SDCard_logger.cpp 
+../src/Blink.cpp 
 
 OBJS += \
-./src/SDCard_logger.o 
+./src/Blink.o 
 
 CPP_DEPS += \
-./src/SDCard_logger.d 
+./src/Blink.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -2,7 +2,8 @@
 
 DigitalOut led(D13);
 
-void setup() {}
+void setup() {
+}
 
 void loop() {
 	led = !led;
