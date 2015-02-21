@@ -27,4 +27,6 @@ SUBDIRS := \
 src \
 src/SD/utility \
 src/SD \
+src/Keypad/utility \
+src/Keypad \
 

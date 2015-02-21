@@ -28,5 +28,5 @@ void loop() {
 	else {
 		lcd.print("All Off");
 	}
-	wait_ms(1000);
+	wait_ms(200);
 }

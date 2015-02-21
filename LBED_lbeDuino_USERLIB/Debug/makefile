@@ -10,6 +10,8 @@ RM := rm -rf
 -include sources.mk
 -include src/SD/utility/subdir.mk
 -include src/SD/subdir.mk
+-include src/Keypad/utility/subdir.mk
+-include src/Keypad/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk

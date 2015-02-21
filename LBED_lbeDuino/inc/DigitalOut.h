@@ -4,6 +4,13 @@
 #include "platform.h"
 #include "PinNames.h"
 #include "DigitalIn.h"
+// ArduinoのpinModeのように入力と出力を切り替えるために、ArduinoPinModeを定義
+typedef int ArduinoPinMode;
+enum e_ArduinoPinMode {
+	Arduino_INPUT = 0,
+	Arduino_OUTPUT = 1,
+	Arduino_INPUT_PULLUP = 2
+};
 
 class DigitalOut : public DigitalIn {
 
@@ -50,6 +57,24 @@ public:
 	{
 		write(rhs.read());
 		return *this;
+	}
+
+	// Arduinoのライブラリコンバートのため、pinModeを追加
+	void pinMode(int mode) {
+		switch (mode) {
+		case Arduino_INPUT:
+			_gpio->DIR &= ~_mask;
+			DigitalIn::mode(PullNone);
+			break;
+		case Arduino_OUTPUT:
+			DigitalIn::mode(PullNone);
+			_gpio->DIR |= _mask;
+			break;
+		case Arduino_INPUT_PULLUP:
+			_gpio->DIR &= ~_mask;
+			DigitalIn::mode(PullUp);
+			break;
+		}
 	}
 
 };

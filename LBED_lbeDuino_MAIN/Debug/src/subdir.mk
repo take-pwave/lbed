@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/SDCard_Info.cpp 
+../src/Calculator.cpp 
 
 OBJS += \
-./src/SDCard_Info.o 
+./src/Calculator.o 
 
 CPP_DEPS += \
-./src/SDCard_Info.d 
+./src/Calculator.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
