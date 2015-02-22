@@ -4,7 +4,7 @@
  * (c) NXP Semiconductors 2013-2015
  * Generated linker script file for LPC1114FN/102
  * Created from LibIncTemplate.ld (LPCXpresso v6.0 (2 [Build 151] [2013-09-18] ))
- * By LPCXpresso v6.0.2 [Build 151] [2013-09-18]  on Fri Feb 20 20:57:36 JST 2015
+ * By LPCXpresso v6.0.2 [Build 151] [2013-09-18]  on Sat Feb 21 22:50:19 JST 2015
  */
 
 

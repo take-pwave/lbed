@@ -1,4 +1,5 @@
-src/Calculator.d: ../src/Calculator.cpp \
+src/TMP006.d: ../src/TMP006.cpp \
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/TMP006.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
@@ -25,11 +26,9 @@ src/Calculator.d: ../src/Calculator.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_gpio.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/AQCM0802.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/Tone.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/Keypad.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/utility/Key.h
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h
+
+/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/TMP006.h:
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h:
 
@@ -84,11 +83,3 @@ src/Calculator.d: ../src/Calculator.cpp \
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h:
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/AQCM0802.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/Tone.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/Keypad.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/utility/Key.h:

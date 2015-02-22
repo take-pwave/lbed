@@ -25,11 +25,13 @@ I2C::I2C(PinName sda, PinName scl, const char *name) {
 int I2C::read(int address, char *data, int length, bool repeated) {
     for (int i = 0; i < length; i++)
     	I2CSlaveBuffer[i] = 0x00;
-    I2CWriteLength = 2;
     I2CReadLength = length;
-    getI2CMasterBuffer()[0] = address;
-    getI2CMasterBuffer()[1] = 0x00;		/* address */
-    getI2CMasterBuffer()[2] = address | RD_BIT;
+//    I2CWriteLength = 2;
+//    getI2CMasterBuffer()[0] = address;
+//    getI2CMasterBuffer()[1] = 0x00;		/* address */
+//    getI2CMasterBuffer()[2] = address | RD_BIT;
+    I2CWriteLength = 0;
+    getI2CMasterBuffer()[0] = address | RD_BIT;
     I2CEngine();
     for (int i = 0; i < length; i++)
     	data[i] = getI2CSlaveBuffer()[i];

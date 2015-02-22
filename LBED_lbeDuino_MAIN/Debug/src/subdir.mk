@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Calculator.cpp 
+../src/TMP006Shield.cpp 
 
 OBJS += \
-./src/Calculator.o 
+./src/TMP006Shield.o 
 
 CPP_DEPS += \
-./src/Calculator.d 
+./src/TMP006Shield.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -120,6 +120,12 @@
 							<inputType id="com.crt.advproject.compiler.cpp.input.1471025068" superClass="com.crt.advproject.compiler.cpp.input"/>
 						</tool>
 					</fileInfo>
+					<fileInfo id="com.crt.advproject.config.lib.debug.21518357.211335268" name="TMP006.cpp" rcbsApplicability="disable" resourcePath="src/TMP006.cpp" toolsToInvoke="com.crt.advproject.cpp.lib.debug.801231745.6645236">
+						<tool id="com.crt.advproject.cpp.lib.debug.801231745.6645236" name="MCU C++ Compiler" superClass="com.crt.advproject.cpp.lib.debug.801231745">
+							<option id="com.crt.advproject.cpp.lib.debug.option.optimization.level.660038465" name="Optimization Level" superClass="com.crt.advproject.cpp.lib.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+							<inputType id="com.crt.advproject.compiler.cpp.input.527988318" superClass="com.crt.advproject.compiler.cpp.input"/>
+						</tool>
+					</fileInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
