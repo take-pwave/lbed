@@ -1,9 +1,10 @@
 /*
  * GENERATED FILE - DO NOT EDIT
- * (C) Code Red Technologies Ltd, 2008-2013
+ * (c) Code Red Technologies Ltd, 2008-2015
+ * (c) NXP Semiconductors 2013-2015
  * Generated linker script file for LPC1343
- * Created from generic_cpp.ld (vLPCXpresso v5.2 (6 [Build 2137] [2013-07-08] ))
- * By LPCXpresso v5.2.6 [Build 2137] [2013-07-08]  on Sat Sep 07 18:34:01 JST 2013
+ * Created from generic_cpp.ld (LPCXpresso v6.0 (2 [Build 151] [2013-09-18] ))
+ * By LPCXpresso v6.0.2 [Build 151] [2013-09-18]  on Mon Feb 23 21:54:41 JST 2015
  */
 
 

@@ -1,4 +1,4 @@
-src/TMP006Shield.d: ../src/TMP006Shield.cpp \
+src/LM73.d: ../src/LM73.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
@@ -26,8 +26,7 @@ src/TMP006Shield.d: ../src/TMP006Shield.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/TMP006.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/AQCM0802.h
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/LM73.h
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h:
 
@@ -83,6 +82,4 @@ src/TMP006Shield.d: ../src/TMP006Shield.cpp \
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h:
 
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/TMP006.h:
-
-/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/AQCM0802.h:
+/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/LM73.h:

@@ -1,4 +1,4 @@
-src/TestLED.d: ../src/TestLED.cpp \
+src/TestLM75B.d: ../src/TestLM75B.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC13xx/inc/LPC13xx.h \
@@ -26,7 +26,9 @@ src/TestLED.d: ../src/TestLED.cpp \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/_timer16.h \
  /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/_timer32.h \
- /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/SerialCDC.h
+ /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/SerialCDC.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/TextLCD.h \
+ /Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/LM75B.h
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/lbed.h:
 
@@ -83,3 +85,7 @@ src/TestLED.d: ../src/TestLED.cpp \
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/src/Common/inc/_timer32.h:
 
 /Users/take/proj/LBED/lbed/LBED_LPC13xx/inc/SerialCDC.h:
+
+/Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/TextLCD.h:
+
+/Users/take/proj/LBED/lbed/LBED_LPC13xx_USERLIB/inc/LM75B.h:
