@@ -93,6 +93,8 @@ class I2C {
 		void stop(void) {
 			/* do nothing */
 		}
+		// dummy setup
+		void setup() {}
 
 };
 

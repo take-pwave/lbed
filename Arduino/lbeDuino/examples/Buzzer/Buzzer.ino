@@ -1,29 +1,27 @@
 /*
-  Buzzer
-  Sound on an buzzer on when button pressed.
- 
-  This example code is in the public domain.
+  Buzzer（ブザーの例）
+  ボタンを押すと圧電ブザーがド、レ、ミと鳴ります。
  */
 #include "lbed.h"
 
 int duration = 500;
 
-// Pin 7 has an tact switch on Protosanap Pro Mini.
-DigitalIn	sw(7);
-// Pin 2 has a buzzer on Protosanap Pro Mini.
-Tone		buzzer(2);
+// D７番ピンに接続されたタクトスイッチを使用
+DigitalIn     sw(D7);
+// D3番ピンに接続された圧電ブザーを使用
+Tone          buzzer(D3);          // #A
 
-// the setup routine runs once when you press reset:
+// リセット時に呼び出されるsetupでは、特に処理は必要ありません。
 void setup() {                
 }
 
-// the loop routine runs over and over again forever:
+// 毎回呼び出されるloopで、タクトスイッチの値を読んで、ブザーを鳴らします。
 void loop() {
-  if (!sw) {
-    buzzer.tone(262, duration);	// C, 500 msec
+  if (!sw) {                        // #B
+    buzzer.tone(262, duration);     // ド, 500 msec
     wait_ms(500);
-    buzzer.tone(294, duration);	// D, 500 msec
+    buzzer.tone(294, duration);     // レ, 500 msec
     wait_ms(500);
-    buzzer.tone(330, duration);	// E, 500 msec
-  }   
+    buzzer.tone(330, duration);     // ミ, 500 msec
+  }
 }

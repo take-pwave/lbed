@@ -1,6 +1,5 @@
 #ifndef LBED_I2C_H
 #define LBED_I2C_H
-#include "SoftI2CMaster.h"
 
 class I2C {
 public:
@@ -23,7 +22,6 @@ public:
 	void start(void) {}
 	void stop(void) {}
 private:
-	SoftI2CMaster	_i2c;
 	int				_scl;
 	int				_sda;
 };

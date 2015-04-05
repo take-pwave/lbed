@@ -17,6 +17,7 @@ AQCM0802::AQCM0802(PinName sda, PinName scl) :  _i2c(sda , scl) {
 }
 
 void AQCM0802::setup() {
+	_i2c.setup();
     contrast = CNTR_DEF;
 
     wait_ms(40);

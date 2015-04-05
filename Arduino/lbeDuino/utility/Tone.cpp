@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include "lbed.h"
 
-void (*_tone)(uint8_t, unsigned int, long unsigned int) = tone;
+void (*_tone)(uint8_t, unsigned int, unsigned long) = tone;
 void (*_noTone)(uint8_t pin) = noTone;
 
 Tone::Tone()

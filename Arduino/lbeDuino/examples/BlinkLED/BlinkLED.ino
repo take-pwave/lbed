@@ -1,20 +1,18 @@
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
- 
-  This example code is in the public domain.
+  BlinkLED（LEDの点滅）
+  １秒間隔でLEDを点滅します。
  */
 #include "lbed.h"
  
-// Pin 13 has an LED connected on most Arduino boards.
+// D13番ピンに接続されたLEDを使用
 DigitalOut led(D13);
 
-// the setup routine runs once when you press reset:
+// リセット時に呼び出されるsetupでは、特に処理は必要ありません。
 void setup() {                
 }
 
-// the loop routine runs over and over again forever:
+// 毎回呼び出されるloopで、ledを切り替えて１秒待ちます。
 void loop() {
-  led = !led;
-  wait_ms(1000);               // wait for a second
+  led = !led;        // LEDを切り替える（点灯→消灯、消灯→点灯）
+  wait_ms(1000);     // １秒待つ（1000ミリ秒=１秒）
 }

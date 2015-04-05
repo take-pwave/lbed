@@ -1,22 +1,20 @@
 /*
-  ButtonSwitch
-  Turns on an LED on when button pushed.
- 
-  This example code is in the public domain.
- */
+  ButtonSwitch（ボタンスイッチの例）
+  ボタンを押すとLEDが点灯します。
+*/
 #include "lbed.h"
  
-// Pin 13 has an LED connected on most Arduino boards.
-DigitalOut	led(13);
-// Pin 7 has an tact switch on Protosanap Pro Mini.
-DigitalIn	sw(7);
+// D13番ピンに接続されたLEDを使用
+DigitalOut	led(D13);
+// D7番ピンに接続されたタクトスイッチを使用
+DigitalIn	sw(D7);
 
-// the setup routine runs once when you press reset:
+// リセット時に呼び出されるsetupでは、特に処理は必要ありません。
 void setup() {                
 }
 
-// the loop routine runs over and over again forever:
+// 毎回呼び出されるloopで、タクトスイッチの値を読んで、LEDを点灯します。
 void loop() {
-  led = !sw;
-  wait_ms(200);               // wait for 200 mili seconds.
+  led = !sw;      // タクトスイッチは押すと0になるので、!で反転した値をledにセットします
+  wait_ms(200);   // 200ミリ秒待つ
 }
