@@ -3,7 +3,7 @@
 #include "Arduino.h"
 
 #define	NC	(-1)
-typedef int PinName;
+typedef byte PinName;
 
 #define wait_ms(ms) delay(ms)
 #define wait_us(us) delayMicroseconds(us)
