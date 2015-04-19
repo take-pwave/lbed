@@ -1,4 +1,4 @@
-src/Blink.d: ../src/Blink.cpp \
+src/HMC5883LShield.d: ../src/HMC5883LShield.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
@@ -25,7 +25,9 @@ src/Blink.d: ../src/Blink.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_gpio.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/PwmOut.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h \
- /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h \
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/AQCM0802.h \
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/HMC5883L.h
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h:
 
@@ -80,3 +82,7 @@ src/Blink.d: ../src/Blink.cpp \
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h:
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h:
+
+/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/AQCM0802.h:
+
+/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/HMC5883L.h:

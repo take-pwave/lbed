@@ -4,13 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/LM73.cpp 
+../src/HMC5883LShield.cpp 
 
 OBJS += \
-./src/LM73.o 
+./src/HMC5883LShield.o 
 
 CPP_DEPS += \
-./src/LM73.d 
+./src/HMC5883LShield.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

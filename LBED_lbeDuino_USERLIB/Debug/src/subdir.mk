@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/AQCM0802.cpp \
+../src/HMC5883L.cpp \
 ../src/LM73.cpp \
 ../src/LM75B.cpp \
 ../src/MARMEX_OB_oled.cpp \
@@ -14,6 +15,7 @@ CPP_SRCS += \
 
 OBJS += \
 ./src/AQCM0802.o \
+./src/HMC5883L.o \
 ./src/LM73.o \
 ./src/LM75B.o \
 ./src/MARMEX_OB_oled.o \
@@ -23,6 +25,7 @@ OBJS += \
 
 CPP_DEPS += \
 ./src/AQCM0802.d \
+./src/HMC5883L.d \
 ./src/LM73.d \
 ./src/LM75B.d \
 ./src/MARMEX_OB_oled.d \
