@@ -21,7 +21,7 @@ void setup() {
 	sensor.setup();
 	sensor.setGain(1);
 	lcd.print("HMC5883L setup");
-	wait_ms(1000);
+	wait_ms(2000);
 }
 
 void loop() {
@@ -32,7 +32,25 @@ void loop() {
 	if (!sw1) {
 		showHead = !showHead;
 	}
-	if (showHead) {
+	// sw2を押すとSelf Testを実行する
+	if (!sw2) {
+		lcd.locate(0, 0); lcd.print("Self Test");
+		lcd.locate(0, 1); lcd.print("Begin");
+		int ret = sensor.selfTest();
+		lcd.cls();
+		lcd.locate(0, 0); lcd.print("Self Test"); lcd.locate(0, 1);
+		if (ret == -1) {
+			lcd.print("Error");
+		}
+		else if (ret == 0) {
+			lcd.print("Failed");
+		}
+		else {
+			lcd.print("Succeeded");
+		}
+		wait_ms(2000);
+	}
+	else if (showHead) {
 		lcd.locate(0, 0);
 		lcd.print("Head:");
 		lcd.print(sensor.getHead(), 1);

@@ -29,12 +29,14 @@ public:
 	void			writeReg(int reg, int val);	// レジスタに値を書き込む
 	int				readReg(int reg);				// レジスタの値を取得
 	void 			measure();	// 測定を実行
+	int				selfTest();	// Self Testを実施　戻り値 -1: エラー、1: キャリブレーション成功、0: キャリブレーション失敗
 	float			getAbs();	// 全磁力を返す
 	float			getHead();	// 北からの方位角を返す（単位 度）
 	float			x, y, z;	// 測定地（単位 mGa）
 private:
 	I2C 			i2c;
-	float			ax, ay, az;	// 測定データを保持
+	short			ax, ay, az;	// 測定データを保持
+	short			x_min, x_max, y_min, y_max, z_min, z_max;
 };
 
 #endif

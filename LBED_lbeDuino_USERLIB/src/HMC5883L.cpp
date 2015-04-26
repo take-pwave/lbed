@@ -72,6 +72,64 @@ void HMC5883L::measure() {
 	z = (float)az * 1000/r;
 }
 
+int HMC5883L::selfTest() {
+	char	cmd[1];
+	char	data[6];
+	int	ret = -1;
+	// Config AレジスターをPositive Self test measurementにセット
+	writeReg(REG_CONFIG_A, 0x71);
+	// Gain = 5をセット
+	setGain(5);
+	// 連続測定モードにセット
+	writeReg(REG_MODE, 0x00);
+	// 6m秒待つ
+	wait_ms(6);
+	// 100回の測定（Dataシートには回数は規定されていない）
+retry:
+	// 初期値のセット
+	x_min = y_min = z_min = 1000;
+	x_max = y_max = z_max = -1000;
+	for (int i = 0; i < 100; i++) {
+		i2c.read(HMC5883L_ADDR, data, 6);
+		ax = short(((unsigned char)data[0] << 8) | (unsigned char)data[1]);	// X軸の測定結果
+		az = short(((unsigned char)data[2] << 8) | (unsigned char)data[3]);	// Z軸の測定結果
+		ay = short(((unsigned char)data[4] << 8) | (unsigned char)data[5]);	// Y軸の測定結果
+		if (ax < x_min)	x_min = ax;
+		if (ax > x_max)	x_max = ax;
+		if (ax < y_min)	y_min = ay;
+		if (ax > y_max)	y_max = ay;
+		if (ax < z_min)	z_min = az;
+		if (ax > z_max)	z_max = az;
+		// レジスターをREG_X_HIGH=0x03にセットし、次のデータを要求
+		cmd[0] = REG_X_HIGH;
+		i2c.write(HMC5883L_ADDR, cmd, 1);
+		// 67 ms待つ
+		wait_ms(67);
+	}
+	// 結果をチェック、すべての軸のminとmaxが243-575の間ならOK
+	if ( (243 <= x_min && x_max <= 575)
+	  && (243 <= y_min && y_max <= 575)
+	  && (243 <= z_min && z_max <= 575)) {
+		// 成功 Config Aレジスターを通常の測定モードに戻す
+		writeReg(REG_CONFIG_A, 0x70);	// 初期設定
+		return 1;
+	}
+	else {
+		int gain = readReg(REG_CONFIG_B) >> 5;
+		if (gain < 7) {
+			setGain(gain + 1);
+			goto retry;
+		}
+		else {
+			// 失敗
+			writeReg(REG_CONFIG_A, 0x70);	// 初期設定
+			return 0;
+		}
+	}
+	writeReg(REG_CONFIG_A, 0x70);	// 初期設定
+	return -1;
+}
+
 float HMC5883L::getAbs() {
 	return (float)sqrt(x*x + y*y + z*z);
 }
