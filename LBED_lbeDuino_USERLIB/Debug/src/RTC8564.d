@@ -1,4 +1,5 @@
-src_base/Main.d: ../src_base/Main.cpp \
+src/RTC8564.d: ../src/RTC8564.cpp \
+ /Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/RTC8564.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \
@@ -27,6 +28,8 @@ src_base/Main.d: ../src_base/Main.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer16.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/_timer32.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/InterruptIn.h
+
+/Users/take/proj/LBED/lbed/LBED_lbeDuino_USERLIB/inc/RTC8564.h:
 
 /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h:
 

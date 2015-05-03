@@ -11,3 +11,4 @@
 #include "I2C.h"
 #include "SPI.h"
 #include "PwmOut.h"
+#include "InterruptIn.h"

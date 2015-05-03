@@ -9,6 +9,7 @@ CPP_SRCS += \
 ../src/libmbed/DigitalIn.cpp \
 ../src/libmbed/DigitalOut.cpp \
 ../src/libmbed/I2C.cpp \
+../src/libmbed/InterruptIn.cpp \
 ../src/libmbed/Print.cpp \
 ../src/libmbed/PwmOut.cpp \
 ../src/libmbed/SPI.cpp \
@@ -24,6 +25,7 @@ OBJS += \
 ./src/libmbed/DigitalIn.o \
 ./src/libmbed/DigitalOut.o \
 ./src/libmbed/I2C.o \
+./src/libmbed/InterruptIn.o \
 ./src/libmbed/Print.o \
 ./src/libmbed/PwmOut.o \
 ./src/libmbed/SPI.o \
@@ -40,6 +42,7 @@ CPP_DEPS += \
 ./src/libmbed/DigitalIn.d \
 ./src/libmbed/DigitalOut.d \
 ./src/libmbed/I2C.d \
+./src/libmbed/InterruptIn.d \
 ./src/libmbed/Print.d \
 ./src/libmbed/PwmOut.d \
 ./src/libmbed/SPI.d \

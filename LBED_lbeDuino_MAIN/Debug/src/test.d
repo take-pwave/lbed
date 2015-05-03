@@ -1,4 +1,4 @@
-src_base/Main.d: ../src_base/Main.cpp \
+src/test.d: ../src/test.cpp \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/inc/lbed.h \
  /Users/take/proj/LBED/lbed/LBED_lbeDuino/src/Common/inc/lpcdevice.h \
  /Users/take/proj/LBED/lbed/CMSISv2p00_LPC11xx/inc/LPC11xx.h \

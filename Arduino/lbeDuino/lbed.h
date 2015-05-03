@@ -32,4 +32,7 @@ typedef byte PinName;
 #include "utility/Tone.h"
 #include "utility/PwmOut.h"
 #include "utility/I2C.h"
+#include "utility/XPrint.h"
+#include "utility/InterruptIn.h"
+
 #endif

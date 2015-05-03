@@ -28,9 +28,8 @@ public:
 	 * mode	INPUT, INPUT_PULLUP
 	 */
 	void mode(int pull);
-private:
-	void _setup(int pin);
 protected:
+	void _setup(int pin);
 	int             _pin;
 };
 #endif

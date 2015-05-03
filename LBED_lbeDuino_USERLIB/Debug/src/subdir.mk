@@ -10,6 +10,7 @@ CPP_SRCS += \
 ../src/LM73.cpp \
 ../src/LM75B.cpp \
 ../src/MARMEX_OB_oled.cpp \
+../src/RTC8564.cpp \
 ../src/TMP006.cpp \
 ../src/TextLCD.cpp \
 ../src/Tone.cpp 
@@ -21,6 +22,7 @@ OBJS += \
 ./src/LM73.o \
 ./src/LM75B.o \
 ./src/MARMEX_OB_oled.o \
+./src/RTC8564.o \
 ./src/TMP006.o \
 ./src/TextLCD.o \
 ./src/Tone.o 
@@ -32,6 +34,7 @@ CPP_DEPS += \
 ./src/LM73.d \
 ./src/LM75B.d \
 ./src/MARMEX_OB_oled.d \
+./src/RTC8564.d \
 ./src/TMP006.d \
 ./src/TextLCD.d \
 ./src/Tone.d 
