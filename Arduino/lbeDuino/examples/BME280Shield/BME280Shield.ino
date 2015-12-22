@@ -4,6 +4,7 @@
  *  Created on: 2015/04/19
  *      Author: take
  */
+#include "Wire.h"
 #include "lbed.h"
 #include "AQCM0802.h"
 #include "BME280.h"

@@ -2,6 +2,7 @@
   PotentioMeter（電圧測定の例）
   電圧が規定電圧（3.3V）の0.1倍になったらLEDを消します。
  */
+#include "Wire.h"
 #include "lbed.h"
 
 // D13番ピンに接続されたLEDを使用

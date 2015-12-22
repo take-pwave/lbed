@@ -2,6 +2,7 @@
   Buzzer（ブザーの例）
   ボタンを押すと圧電ブザーがド、レ、ミと鳴ります。
  */
+#include "Wire.h"
 #include "lbed.h"
 
 int duration = 500;

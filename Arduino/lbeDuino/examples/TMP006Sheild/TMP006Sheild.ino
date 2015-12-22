@@ -1,3 +1,4 @@
+#include "Wire.h"
 #include "lbed.h"
 #include "TMP006.h"
 #include "AQCM0802.h"

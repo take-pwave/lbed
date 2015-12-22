@@ -8,7 +8,7 @@ I2C::I2C(int sda, int scl)
 
 void I2C::setup()
 {
-    Wire.begin();
+    // Wire.begin();	// Arduinoの違いにより、beginの引数が異なるため、スケッチのsetupで定義してもらうように変更
 }
 
 int I2C::write(int address, const char *data, int length, bool repeated)

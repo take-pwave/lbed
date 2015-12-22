@@ -2,6 +2,7 @@
   ButtonSwitch（ボタンスイッチの例）
   ボタンを押すとLEDが点灯します。
 */
+#include "Wire.h"
 #include "lbed.h"
  
 // D13番ピンに接続されたLEDを使用

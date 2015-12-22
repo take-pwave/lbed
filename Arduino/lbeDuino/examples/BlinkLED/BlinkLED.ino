@@ -2,6 +2,7 @@
   BlinkLED（LEDの点滅）
   １秒間隔でLEDを点滅します。
  */
+#include "Wire.h"
 #include "lbed.h"
  
 // D13番ピンに接続されたLEDを使用
