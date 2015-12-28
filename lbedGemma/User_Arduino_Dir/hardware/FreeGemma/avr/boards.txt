@@ -1,0 +1,19 @@
+##############################################################
+
+freegemma.name=Free Gemma 8MHz
+
+freegemma.upload.tool=avrdude
+freegemma.upload.protocol=usbtiny
+freegemma.upload.maximum_size=5310
+freegemma.upload.maximum_data_size=512
+
+freegemma.bootloader.tool=avrdude
+freegemma.bootloader.low_fuses=0xF1
+freegemma.bootloader.high_fuses=0xD5
+freegemma.bootloader.extended_fuses=0xFE
+
+freegemma.build.board=AVR_FREEGEMMA
+freegemma.build.mcu=attiny85
+freegemma.build.f_cpu=8000000L
+freegemma.build.core=arduino:arduino
+freegemma.build.variant=tiny8

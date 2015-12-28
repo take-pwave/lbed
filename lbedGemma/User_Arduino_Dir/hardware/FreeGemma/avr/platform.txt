@@ -1,0 +1,9 @@
+# Free Gemma Boards.
+# ------------------------------
+
+# For more info:
+# https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
+
+name=Free Gemma Boards
+version=1.6.1
+
