@@ -1,5 +1,5 @@
 #include "RTC8564.h"
-#include "lbed.h"
+#include "lbedGemma.h"
 
 #define    RTC_8564_ADDR    (0x51 << 1)
 

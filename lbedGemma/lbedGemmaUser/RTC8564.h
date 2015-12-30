@@ -1,7 +1,7 @@
 #ifndef LBED_RTC8564_H
 #define LBED_RTC8564_H
 
-#include "lbed.h"
+#include "lbedGemma.h"
 
 #define	NOT_APPLICABLE	(0x80)
 

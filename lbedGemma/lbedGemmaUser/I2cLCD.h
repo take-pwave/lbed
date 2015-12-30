@@ -2,7 +2,7 @@
 #ifndef MBED_I2CLCD_H
 #define MBED_I2CLCD_H
 
-#include "lbed.h"
+#include "lbedGemma.h"
 
 class I2cLCD : public Print {
 public:

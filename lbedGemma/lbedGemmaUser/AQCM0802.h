@@ -2,7 +2,7 @@
 #ifndef MBED_I2CLCD_H
 #define MBED_I2CLCD_H
 
-#include "lbed.h"
+#include "lbedGemma.h"
 
 #define LCD_DISPLAYCONTROL      0x08
 // flags for display on/off control

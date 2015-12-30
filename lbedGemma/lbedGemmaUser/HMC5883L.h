@@ -1,7 +1,7 @@
 #ifndef HMC5883L_H
 #define HMC5883L_H
 
-#include "lbed.h"
+#include "lbedGemma.h"
 
 //  HMC5883L I2C address
 #define    HMC5883L_ADDR (0x1E << 1)

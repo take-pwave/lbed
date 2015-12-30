@@ -1,7 +1,7 @@
 #ifndef CLOCK_UTIL_H
 #define CLOCK_UTIL_H
 
-#include "lbed.h"
+#include "lbedGemma.h"
 
 class ClockUtil {
 public:

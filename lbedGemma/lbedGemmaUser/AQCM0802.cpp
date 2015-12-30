@@ -1,5 +1,5 @@
 #include "AQCM0802.h"
-#include "lbed.h"
+#include "lbedGemma.h"
 
 #define    I2CLCD_ADDR    0x7C
 
@@ -17,7 +17,7 @@ AQCM0802::AQCM0802(PinName sda, PinName scl) :  _i2c(sda , scl) {
 }
 
 void AQCM0802::setup() {
-	_i2c.setup();
+    //_i2c.setup();
     contrast = CNTR_DEF;
     
     wait_ms(40);

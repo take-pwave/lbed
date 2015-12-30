@@ -16,7 +16,7 @@
 #define MBED_BME280_H
 
 //#include "mbed.h"
-#include "lbed.h"
+#include "lbedGemma.h"
 
 //#define _DEBUG
 #define DEFAULT_SLAVE_ADDRESS (0x76 << 1)

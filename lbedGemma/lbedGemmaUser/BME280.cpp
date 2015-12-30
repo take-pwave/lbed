@@ -13,7 +13,7 @@
  */
 
 //#include "mbed.h"
-#include "lbed.h"
+#include "lbedGemma.h"
 #include "BME280.h"
 
 BME280::BME280(PinName sda, PinName scl, char slave_adr)

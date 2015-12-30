@@ -1,7 +1,7 @@
 #ifndef LM73_H
 #define LM73_H
 
-#include "lbed.h"
+#include "lbedGemma.h"
 
 //  LM73 IIC address
 #define    LM73_ADDR (0x4C << 1)

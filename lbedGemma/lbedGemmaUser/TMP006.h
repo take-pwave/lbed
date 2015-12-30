@@ -24,7 +24,7 @@
 #ifndef TMP006_H
 #define TMP006_H
 
-#include "lbed.h"
+#include "lbedGemma.h"
 #include <math.h>
 
 // Constants for calculating object temperature

@@ -1,5 +1,5 @@
 #include "I2cLCD.h"
-#include "lbed.h"
+#include "lbedGemma.h"
 
 #define    I2CLCD_ADDR    0x7C
 

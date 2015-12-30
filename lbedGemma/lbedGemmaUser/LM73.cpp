@@ -1,4 +1,4 @@
-#include "lbed.h"
+#include "lbedGemma.h"
 #include "LM73.h"
 
 LM73::LM73(PinName sda, PinName scl) : i2c(sda, scl)
